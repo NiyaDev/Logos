@@ -1,6 +1,8 @@
 
 module logos::monsters;
-
+import raylib5::rl;
+import raygui::rg;
+import logos;
 
 enum Monsters : int (int gen) {
   MISSINGNO = 0,
@@ -700,4 +702,60 @@ fn void! init(Generation generation) {
       monsters_collected[251] = true;
     default:
   }
+}
+
+
+struct Monsterdex {
+  Rectangle rect;
+
+  bool is_open;
+  Vector2 scroll;
+  float offset;
+  float length;
+}
+
+<* Creates a new Mosterdex struct *>
+fn Monsterdex init_dex() {
+  Monsterdex md;
+
+  md.is_open = false;
+  md.scroll = {0,0};
+  md.offset = (float)logos::screen_height - 50;
+  md.length = (float)current_gen.total * 30;
+
+  return md;
+}
+<* Draws Monsterdex to screen *>
+fn void Monsterdex.draw(&self) {
+  Rectangle scroll_rect = {20,20 + self.offset, 350, (float)logos::screen_height - 40};
+  Rectangle button_rect = {350, 20 + self.offset, 20, 20};
+
+  //* Draw scroll panel
+  rg::guiScrollPanel(scroll_rect, "Pokedex", {0, 0, 335, self.length + 5}, &self.scroll, &self.rect);
+
+  //* Draw and logic for expand/shrink box
+  if (self.is_open) {
+    if (rg::guiButton(button_rect, "\\/")) { self.is_open = !self.is_open; }
+  } else {
+    if (rg::guiButton(button_rect, "/\\")) { self.is_open = !self.is_open; }
+  }
+
+  //* Draw a checkbox for each monster
+  if (self.is_open) {
+    for (int i; i < current_gen.total+1; i++) {
+      float scroll_y = (30 * ((float)i - 1) + 50 + self.scroll.y);
+
+      if (scroll_y > 40 && scroll_y < (float)logos::screen_height - 40) {
+        String tx = string::format("%s\0", Monsters.from_ordinal(i), allocator: allocator::heap());
+        if (rg::guiCheckBox({40, scroll_y + self.offset, 20, 20}, tx, &monsters_collected[i])) {}
+        tx.free();
+      }
+    }
+  }
+}
+<* Updates Monsterdex *>
+fn void Monsterdex.update(&self) {
+  if ( self.is_open && self.offset > 0) self.offset -= 20;
+	if (!self.is_open && self.offset < (float)logos::screen_height - 50) self.offset += 20;
+	 
 }
