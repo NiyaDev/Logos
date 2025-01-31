@@ -46,14 +46,14 @@ fn void load_yaml(String filename) {
 	switch (series_name) {
 		case "Pokemon":
 			switch (game_name) {
-				case "Red/Blue/Yellow": 		   monsters::init(Generation.GEN_1)!!;
-				case "Gold/Silver/Crystal":    monsters::init(Generation.GEN_2)!!;
-				case "Ruby/Sapphire/Emerald":  monsters::init(Generation.GEN_3)!!;
-				case "Fire Red/Leaf Green":    monsters::init(Generation.GEN_3)!!;
-				case "Diamond/Pearl/Platinum": monsters::init(Generation.GEN_4)!!;
-				case "Heart Gold/Soul Silver": monsters::init(Generation.GEN_4)!!;
-				case "Black/White":            monsters::init(Generation.GEN_5)!!;
-				case "Black 2/White 2":        monsters::init(Generation.GEN_5)!!;
+				case "Red/Blue/Yellow": 		   init_gen(Generation.GEN_1)!!;
+				case "Gold/Silver/Crystal":    init_gen(Generation.GEN_2)!!;
+				case "Ruby/Sapphire/Emerald":  init_gen(Generation.GEN_3)!!;
+				case "Fire Red/Leaf Green":    init_gen(Generation.GEN_3)!!;
+				case "Diamond/Pearl/Platinum": init_gen(Generation.GEN_4)!!;
+				case "Heart Gold/Soul Silver": init_gen(Generation.GEN_4)!!;
+				case "Black/White":            init_gen(Generation.GEN_5)!!;
+				case "Black 2/White 2":        init_gen(Generation.GEN_5)!!;
 				default: io::printfn("Pokemon game name unknown");
 			}
 	}
@@ -65,10 +65,5 @@ fn void load_yaml(String filename) {
     return;
   }
 
-	ddb = {
-		.rect = {20, 20, 350, 30},
-		.str  = content.convert_keys_to_string(),
-	}; 
-
-  
+	ddb.str = content.convert_keys_to_string();
 }

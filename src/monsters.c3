@@ -1,8 +1,8 @@
 
-module logos::monsters;
+module logos;
 import raylib5::rl;
 import raygui::rg;
-import logos;
+import yaml;
 
 enum Monsters : int (int gen) {
   MISSINGNO = 0,
@@ -673,7 +673,7 @@ Generation current_gen;
 bool[] monsters_collected;
 
 <* Initializes monsters collected *>
-fn void! init(Generation generation) {
+fn void! init_gen(Generation generation) {
   current_gen = generation;
   monsters_collected = mem::new_array(bool, (generation.total + (usz)1));
 
@@ -756,6 +756,48 @@ fn void Monsterdex.draw(&self) {
 <* Updates Monsterdex *>
 fn void Monsterdex.update(&self) {
   if ( self.is_open && self.offset > 0) self.offset -= 20;
-	if (!self.is_open && self.offset < (float)logos::screen_height - 50) self.offset += 20;
-	 
+	if (!self.is_open && self.offset < (float)logos::screen_height - 50) self.offset += 20;	 
+}
+
+
+struct MonsterUI {
+  Toggle toggle;
+  
+  String name;
+  String time;
+  String chance;
+  String levels;
+}
+<* *>
+fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
+  MonsterUI output;
+  output.toggle = {.rect = rect};
+
+  output.name = self.get_object("name")!!.v_string;
+
+  Array* time = (Array*)self.get_object("time")!!.value;
+  for (int i; i < time.len()-1; i++) {
+    output.time = output.time.concat(time.get_array(i)!!.v_string);
+
+    if (i < time.len()-2) { output.time = output.time.concat(" | "); }
+  }
+
+  Array* chance = (Array*)self.get_object("chance")!!.value;
+  for (int i; i < chance.len()-1; i++) {
+    output.time = output.time.concat(chance.get_array(i)!!.v_string);
+
+    if (i < chance.len()-2) { output.time = output.time.concat(" | "); }
+  }
+
+  TypedValue levels = self.get_object("levels")!!;
+  switch (levels.type) {
+    case STRING:
+      output.levels = levels.v_string;
+    case INT:
+      output.levels = string::format("%d", levels.v_int);
+    default:
+  }
+
+
+  return output;
 }

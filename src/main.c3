@@ -4,7 +4,6 @@ import std::io;
 import raylib5::rl;
 import raygui::rg;
 import yaml;
-import logos::monsters;
 
 
 uint screen_height = 720;
@@ -17,6 +16,8 @@ String series_name;
 String game_name;
 
 DropdownBox ddb;
+ScrollPanel content_scroll;
+Content section_content;
 
 Monsterdex monsterdex;
 
@@ -27,7 +28,13 @@ fn int main(String[] args) {
 	rl::setTargetFPS(60);
 	rg::guiLoadStyle("resources/jungle/style_jungle.rgs");
 
-	monsterdex = monsters::init_dex();
+	ddb = {.rect = {20, 20, 350, 30}};
+	content_scroll = {
+		.rect = {10,60,370,620},
+		.content = {0,0,345,595},
+	};
+
+	monsterdex = init_dex();
 
 	while (!rl::windowShouldClose()) {
 		//* Wait until a file gets dragged in
@@ -66,7 +73,10 @@ fn int main(String[] args) {
 		rl::beginDrawing();
 			rl::clearBackground({49,68,54,255});
 
-			ddb.draw();
+			content_scroll.draw();
+			if (ddb.draw()) {
+				
+			}
 	
 			//* Draw monsterdex if needed
 			switch (series_name) {
