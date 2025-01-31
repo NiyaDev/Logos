@@ -52,6 +52,18 @@ fn int main(String[] args) {
 	float pokedex_offset = 0; 
 	float length = (float)monsters::current_gen.total * 30;
 
+	TypedValue content = yml.get("content")!!;
+	//content.print();
+
+	String content_string = (String)mem::new_array(char,1);
+	int content_chosen = 0;
+	bool content_edit = false;
+	((Object*)content.value).@each(; String key, TypedValue val) {
+		content_string = content_string.concat(key).concat("\n");
+		io::printfn("%s",key);
+		//val.print();
+	};
+
 	while (!rl::windowShouldClose()) {
 		screen_height = rl::getScreenHeight();
 		screen_width  = rl::getScreenWidth();
@@ -79,11 +91,13 @@ fn int main(String[] args) {
 						for (int i = 1; i < monsters::current_gen.total+1; i++) {
 							float scroll_y = (30 * ((float)i-1) + 50 + pokedex_scroll.y);
 							if (scroll_y > 40 && scroll_y < (float)screen_height - 40) {
-								String tx = string::tformat("%s\0",monsters::Monsters.from_ordinal(i));
+								String tx = string::format("%s\0",monsters::Monsters.from_ordinal(i), allocator: allocator::heap());
 								if (rg::guiCheckBox({40,scroll_y+pokedex_offset,20,20},tx,&monsters::monsters_collected[i])) {}
 								tx.free();
 							}
 						}
+					} else {
+						if (rg::guiDropdownBox({20,20,(float)screen_width - 40, 30}, content_string, &content_chosen, content_edit)) { content_edit = !content_edit; }
 					}
 			}
 		rl::endDrawing();

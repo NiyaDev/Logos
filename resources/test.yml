@@ -7,89 +7,90 @@ generation: 2
 
 content:
   New Bark Town:
-    toggle: tutorial
-    toggle: name rival (Achievement)
+    events:
+      toggle_1: tutorial
+      toggle_2: name rival (Achievement)
   Route 29:
     pokemon:
       gold:
-        toggle:
+        toggle_1:
           name: Pidgey
           time: [M,D]
           chance: [55,55]
           levels: 2-4
-        toggle:
+        toggle_2:
           name: Rattata
           time: [M,D]
           chance: [5,5]
           levels: 4
-        toggle:
+        toggle_3:
           name: Rattata
           time: [N]
           chance: [15]
           levels: 2,4
-        toggle:
+        toggle_4:
           name: Sentret
           time: [M,D]
           chance: [40,40]
-          levels: 2-3 
-        toggle:
+          levels: 2-3
+        toggle_5:
           name: Hoothoot
           time: [N]
           chance: [85]
-          levels: 2-4  
+          levels: 2-4
       silver:
-        toggle:
+        toggle_1:
           name: Pidgey
           time: [M,D]
           chance: [55,55]
           levels: 2-4
-        toggle:
+        toggle_2:
           name: Rattata
           time: [M,D]
           chance: [5,5]
           levels: 4
-        toggle:
+        toggle_3:
           name: Rattata
           time: [N]
           chance: [15]
           levels: 2,4
-        toggle:
+        toggle_4:
           name: Sentret
           time: [M,D]
           chance: [40,40]
           levels: 2-3 
-        toggle:
+        toggle_5:
           name:Hoothoot
           time: [N]
           chance: [85]
           levels: 2-4  
       crystal:
-        toggle:
+        toggle_1:
           name: Pidgey
           time: [M,D]
           chance: [50,50]
           levels: 2-3
-        toggle:
+        toggle_2:
           name: Rattata
           time: [M,D]
           chance: [5,5]
           levels: 2,
-        toggle:
+        toggle_3:
           name: Rattata
           time: [N]
           chance: [45]
           levels: 2-3 
-        toggle:
+        toggle_4:
           name: Sentret
           time: [M,D]
           chance: [40,40]
           levels: 2-3 
-        toggle:
+        toggle_5:
           name: Hoothoot
           time: [N]
           chance: [55]
           levels: 2-3 
-        toggle:
+        toggle_6:
           name: Hoppip
           time: [M,D]
           chance: [5,5]
