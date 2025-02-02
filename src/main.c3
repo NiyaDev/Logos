@@ -21,6 +21,8 @@ Content section_content;
 
 Monsterdex monsterdex;
 
+Content content_new;
+
 fn int main(String[] args) {
 	
 	rl::setTraceLogLevel(rl::TraceLogLevel.NONE);
@@ -52,6 +54,7 @@ fn int main(String[] args) {
 			rl::unloadDroppedFiles(list);
 				
 			load_yaml(filename);
+			content_new = yml.create_content()!!;
 		}
 
 		//* If theres no current file, draw text
@@ -67,21 +70,22 @@ fn int main(String[] args) {
 		//* Update monsterdex if needed
 		switch (series_name) {
 			case "Pokemon":
-				monsterdex.update();
+				//monsterdex.update();
 		}
+		content_new.update();
 
 		rl::beginDrawing();
 			rl::clearBackground({49,68,54,255});
 
-			content_scroll.draw();
-			if (ddb.draw()) {
-				
-			}
+			content_new.draw();
+
+			//content_scroll.draw();
+			//if (ddb.draw()) {}
 	
 			//* Draw monsterdex if needed
 			switch (series_name) {
 				case "Pokemon":
-					monsterdex.draw();
+					//monsterdex.draw();
 			}
 		rl::endDrawing();
 	}

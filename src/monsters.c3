@@ -1,5 +1,6 @@
 
 module logos;
+import std::io;
 import raylib5::rl;
 import raygui::rg;
 import yaml;
@@ -672,8 +673,58 @@ enum Generation : int (int total) {
 Generation current_gen;
 bool[] monsters_collected;
 
+<* Converts a game name as a string to a generation *>
+fn Generation String.gen(self) {
+  switch (self) {
+    case "Red/Blue/Yellow": 		   return GEN_1;
+		case "Gold/Silver/Crystal":    return GEN_2;
+		case "Ruby/Sapphire/Emerald":  return GEN_3;
+		case "Fire Red/Leaf Green":    return GEN_3;
+		case "Diamond/Pearl/Platinum": return GEN_4;
+		case "Heart Gold/Soul Silver": return GEN_4;
+		case "Black/White":            return GEN_5;
+		case "Black 2/White 2":        return GEN_5;
+		default:
+		  io::printfn("Pokemon game name unknown");
+		  return GEN_1;
+  }
+}
 <* Initializes monsters collected *>
-fn void! init_gen(Generation generation) {
+fn bool[]! init_collection(Generation gen) {
+  bool[] output = mem::new_array(bool, (gen.total + (usz)1));
+  
+  switch (gen) {
+    case GEN_1:
+      output[Monsters.MEW.ordinal] = true;
+    case GEN_2:
+      output[Monsters.BULBASAUR.ordinal] = true;
+      output[Monsters.IVYSAUR.ordinal] = true;
+      output[Monsters.VENUSAUR.ordinal] = true;
+      output[Monsters.CHARMANDER.ordinal] = true;
+      output[Monsters.CHARMELEON.ordinal] = true;
+      output[Monsters.CHARIZARD.ordinal] = true;
+      output[Monsters.SQUIRTLE.ordinal] = true;
+      output[Monsters.WARTORTLE.ordinal] = true;
+      output[Monsters.BLASTOISE.ordinal] = true;
+      output[Monsters.OMANYTE.ordinal] = true;
+      output[Monsters.OMASTAR.ordinal] = true;
+      output[Monsters.KABUTO.ordinal] = true;
+      output[Monsters.KABUTOPS.ordinal] = true;
+      output[Monsters.ARTICUNO.ordinal] = true;
+      output[Monsters.ZAPDOS.ordinal] = true;
+      output[Monsters.MOLTRES.ordinal] = true;
+      output[Monsters.MEWTWO.ordinal] = true;
+      output[Monsters.MEW.ordinal] = true;
+      output[Monsters.CELEBI.ordinal] = true;
+    default:
+  }
+  
+  return output;
+}
+<* Initializes monsters collected *>
+fn void! init_gen(String game_name) {
+  Generation generation = game_name.gen();
+
   current_gen = generation;
   monsters_collected = mem::new_array(bool, (generation.total + (usz)1));
 

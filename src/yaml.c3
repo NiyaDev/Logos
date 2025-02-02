@@ -42,7 +42,7 @@ fn void load_yaml(String filename) {
     return;
   }
 	game_name = game.v_string;
-
+	/*
 	switch (series_name) {
 		case "Pokemon":
 			switch (game_name) {
@@ -57,6 +57,7 @@ fn void load_yaml(String filename) {
 				default: io::printfn("Pokemon game name unknown");
 			}
 	}
+	*/
 
   TypedValue! content = yml.get("content");
   if (catch content) {
@@ -64,7 +65,7 @@ fn void load_yaml(String filename) {
     free(yml);
     return;
   }
-  Content con = content.to_content();
+  //Content con = content.to_content();
 
 	ddb.str = content.convert_keys_to_string();
 }
