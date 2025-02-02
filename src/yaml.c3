@@ -64,6 +64,7 @@ fn void load_yaml(String filename) {
     free(yml);
     return;
   }
+  Content con = content.to_content();
 
 	ddb.str = content.convert_keys_to_string();
 }

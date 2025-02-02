@@ -775,18 +775,18 @@ fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
 
   output.name = self.get_object("name")!!.v_string;
 
-  Array* time = (Array*)self.get_object("time")!!.value;
-  for (int i; i < time.len()-1; i++) {
+  TypedValue time = self.get_object("time")!!;
+  for (int i; i < time.size()!!-1; i++) {
     output.time = output.time.concat(time.get_array(i)!!.v_string);
 
-    if (i < time.len()-2) { output.time = output.time.concat(" | "); }
+    if (i < time.size()!!-2) { output.time = output.time.concat(" | "); }
   }
 
-  Array* chance = (Array*)self.get_object("chance")!!.value;
-  for (int i; i < chance.len()-1; i++) {
+  TypedValue chance = self.get_object("chance")!!;
+  for (int i; i < chance.size()!!-1; i++) {
     output.time = output.time.concat(chance.get_array(i)!!.v_string);
 
-    if (i < chance.len()-2) { output.time = output.time.concat(" | "); }
+    if (i < chance.size()!!-2) { output.time = output.time.concat(" | "); }
   }
 
   TypedValue levels = self.get_object("levels")!!;
@@ -794,7 +794,7 @@ fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
     case STRING:
       output.levels = levels.v_string;
     case INT:
-      output.levels = string::format("%d", levels.v_int);
+      output.levels = string::format("%d", levels.v_int, allocator: allocator::heap());
     default:
   }
 
