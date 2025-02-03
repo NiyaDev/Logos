@@ -17,6 +17,18 @@ fn String TypedValue.convert_keys_to_string(&self) {
 	};
   return output;
 }
+<* Converts the members of the input array into a single string seperated by '\n' *>
+fn String! TypedValue.convert_array_to_string(&self) {
+  if (self.type != ARRAY) return "";
+
+  String output;
+  for (int i; i < self.size()!!; i++) {
+    // TODO: Error out if array members aren't strings 
+    output = output.concat(self.get_array(i)!!.v_string);
+    if (i < self.size()!! - 1) output = output.concat("\n");
+  }
+  return output;
+}
 <* Loads data from yaml *>
 fn void load_yaml(String filename) {
 	Yaml! temp = yaml::parse_file(filename);
@@ -42,22 +54,6 @@ fn void load_yaml(String filename) {
     return;
   }
 	game_name = game.v_string;
-	/*
-	switch (series_name) {
-		case "Pokemon":
-			switch (game_name) {
-				case "Red/Blue/Yellow": 		   init_gen(Generation.GEN_1)!!;
-				case "Gold/Silver/Crystal":    init_gen(Generation.GEN_2)!!;
-				case "Ruby/Sapphire/Emerald":  init_gen(Generation.GEN_3)!!;
-				case "Fire Red/Leaf Green":    init_gen(Generation.GEN_3)!!;
-				case "Diamond/Pearl/Platinum": init_gen(Generation.GEN_4)!!;
-				case "Heart Gold/Soul Silver": init_gen(Generation.GEN_4)!!;
-				case "Black/White":            init_gen(Generation.GEN_5)!!;
-				case "Black 2/White 2":        init_gen(Generation.GEN_5)!!;
-				default: io::printfn("Pokemon game name unknown");
-			}
-	}
-	*/
 
   TypedValue! content = yml.get("content");
   if (catch content) {
@@ -65,7 +61,6 @@ fn void load_yaml(String filename) {
     free(yml);
     return;
   }
-  //Content con = content.to_content();
 
 	ddb.str = content.convert_keys_to_string();
 }

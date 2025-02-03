@@ -54,6 +54,7 @@ fn int main(String[] args) {
 			rl::unloadDroppedFiles(list);
 				
 			load_yaml(filename);
+			content_new.reset();
 			content_new = yml.create_content()!!;
 		}
 

@@ -1,0 +1,282 @@
+%YAML 1.2
+---
+
+series: Pokemon
+game: Gold/Silver/Crystal
+versions: [Gold,Silver,Crystal]
+
+content:
+  New Bark Town:
+    Events:
+      toggle_1: Get starter
+      toggle_2: Name Rival (Acievement)
+      toggle_3: Return Pokemon Egg
+    Items:
+      toggle_1: Everstone - Show Elm Togepi
+      toggle_2: Master Ball - Earn all 8 Johto badges
+      toggle_3: SS Ticket - Enter Hall of Fame
+    Pokemon:
+      Gift:
+        monster_1:
+          name: Chikorita
+          levels: 5
+        monster_2:
+          name: Cyndaquil
+          levels: 5
+        monster_3:
+          name: Totodile
+          levels: 5
+      Surf:
+        monster_1:
+          name: Tentacool
+          time: [A]
+          chance: [90]
+          levels: 15-24
+        monster_2:
+          name: Tentacruel
+          time: [A]
+          chance: [10]
+          levels: 20-24
+      Old Rod:
+        monster_1:
+          name: Tentacool
+          time: [A]
+          chance: [15]
+          levels: 10
+        monster_2:
+          name: Magikarp
+          time: [A]
+          chance: [85]
+          levels: 10
+      Good Rod:
+        monster_1:
+          name: Tentacool
+          time: [A]
+          chance: [35]
+          levels: 20
+        monster_2: 
+          name: Shellder
+          time: [A]
+          chance: [10]
+          levels: 20
+        monster_3:
+          name: Magikarp
+          time: [A]
+          chance: [35]
+          levels:  20
+        monster_4:
+          name: Chinchou
+          time: [A]
+          chance: [20]
+          levels: 20
+      Super Rod:
+        monster_1:
+          name: Tentacruel
+          time: [A]
+          chance: [20]
+          levels: 40
+        monster_2:
+          name: Shellder
+          time: [A]
+          chance: [30]
+          levels: 40
+        monster_3:
+          name: Chinchou
+          time: [A]
+          chance: [10]
+          levels: 40
+        monster_4:
+          name: Lanturn
+          time: [A]
+          chance: [10]
+          levels: 40 
+
+  Route 29:
+    Pokemon:
+      Gold:
+        grass:
+          monster_1:
+            name: Pidgey
+            time: [M,D]
+            chance: [55,55]
+            levels: 2-4
+          monster_2:
+            name: Rattata
+            time: [M,D]
+            chance: [5,5]
+            levels: 4
+          monster_3:
+            name: Rattata
+            time: [N]
+            chance: [15]
+            levels: 2,4
+          monster_4:
+            name: Sentret
+            time: [M,D]
+            chance: [40,40]
+            levels: 2-3
+          monster_5:
+            name: Hoothoot
+            time: [N]
+            chance: [85]
+            levels: 2-4
+        headbutt_mod:
+          monster_1:
+            name: Spearow
+            time: [A]
+            chance: [80]
+            levels: 10
+          monster_2:
+            name: Aipom
+            time: [A]
+            chance: [20]
+            levels: 10
+        headbutt_low:
+          monster_1:
+            name: Spearow
+            time: [A]
+            chance: [50]
+            levels: 10
+          monster_2:
+            name: Aipom
+            time: [A]
+            chance: [20]
+            levels: 10
+          monster_3:
+            name: Heracross
+            time: [A]
+            chance: [30]
+            levels: 10
+      Silver:
+        grass:
+          monster_1:
+            name: Pidgey
+            time: [M,D]
+            chance: [55,55]
+            levels: 2-4
+          monster_2:
+            name: Rattata
+            time: [M,D]
+            chance: [5,5]
+            levels: 4
+          monster_3:
+            name: Rattata
+            time: [N]
+            chance: [15]
+            levels: 2,4
+          monster_4:
+            name: Sentret
+            time: [M,D]
+            chance: [40,40]
+            levels: 2-3
+          monster_5:
+            name: Hoothoot
+            time: [N]
+            chance: [85]
+            levels: 2-4
+        headbutt_mod:
+          monster_1:
+            name: Spearow
+            time: [A]
+            chance: [80]
+            levels: 10
+          monster_2:
+            name: Aipom
+            time: [A]
+            chance: [20]
+            levels: 10
+        headbutt_low:
+          monster_1:
+            name: Spearow
+            time: [A]
+            chance: [50]
+            levels: 10
+          monster_2:
+            name: Aipom
+            time: [A]
+            chance: [20]
+            levels: 10
+          monster_3:
+            name: Heracross
+            time: [A]
+            chance: [30]
+            levels: 10
+      Crystal:
+        grass:
+          monster_1:
+            name: Pidgey
+            time: [M,D]
+            chance: [50,50]
+            levels: 2-3
+          monster_2:
+            name: Rattata
+            time: [M,D]
+            chance: [5,5]
+            levels: 2,
+          monster_3:
+            name: Rattata
+            time: [N]
+            chance: [45]
+            levels: 2-3 
+          monster_4:
+            name: Sentret
+            time: [M,D]
+            chance: [40,40]
+            levels: 2-3 
+          monster_5:
+            name: Hoothoot
+            time: [N]
+            chance: [55]
+            levels: 2-3 
+          monster_6:
+            name: Hoppip
+            time: [M,D]
+            chance: [5,5]
+            levels: 3
+        headbutt_mod:
+          monster_1:
+            name: Exeggcute
+            time: [A]
+            chance: [20]
+            levels: 10
+          monster_2:
+            name: Hoothoot
+            time: [A]
+            chance: [50]
+            levels: 10
+          monster_3:
+            name: Ledyba
+            time: [A]
+            chance: [15]
+            levels: 10
+          monster_4:
+            name: Spinarak
+            time: [A]
+            chance: [15]
+            levels: 10
+        headbutt_low:
+          monster_1:
+            name: Exeggcute
+            time: [A]
+            chance: [20]
+            levels: 10
+          monster_2:
+            name: Hoothoot
+            time: [A]
+            chance: [50]
+            levels: 10
+          monster_3:
+            name: Pineco
+            time: [A]
+            chance: [30]
+            levels: 10
+    Items:
+      toggle_1: Pink Bow - Tuscany on Tue. post Zephyr badge
+      Gold:
+        toggle_1: Potion - East of the northeasternmost grass patch
+      Crystal:
+        toggle_1: Potion - East of the northeasternmost grass patch
+
+  Cherrygrove City:
+    Items:
+

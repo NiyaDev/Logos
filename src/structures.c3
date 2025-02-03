@@ -1,5 +1,6 @@
 
 module logos;
+import std::io;
 import raylib5::rl;
 import raygui::rg;
 
@@ -21,6 +22,10 @@ fn bool DropdownBox.draw(&self) {
     return false;
   }
 }
+<* Frees structure *>
+fn void DropdownBox.free(&self) {
+  self.str.free();
+}
 
 
 struct ScrollPanel {
@@ -37,6 +42,10 @@ fn void ScrollPanel.draw(&self) {
   if (self.text != "") { str = (char*)self.text; }
   rg::guiScrollPanel(self.rect, str, self.content, &self.scroll, &self.view);
 }
+<* Frees structure *>
+fn void ScrollPanel.free(&self) {
+  self.text.free();
+}
 
 
 struct Label {
@@ -44,8 +53,22 @@ struct Label {
   String text;
 }
 <* Draw label *>
-fn void Label.draw(&self) {
-  rg::guiLabel(self.rect, self.text);
+fn void Label.draw(&self, Vector2 offset = {0,0}) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+  rg::guiLabel(rect_off, self.text);
+}
+<* Frees structure *>
+fn void Label.free(&self) {
+  self.text.free();
+}
+<* Calculates whether rect is winthin input *>
+fn bool Label.within_rect(&self, Vector2 offset, Rectangle rect) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+  return ((rect_off.x+rect_off.width > rect.x) && (rect_off.x < rect.x+rect.width) && (rect_off.y > rect.y) && (rect_off.y+rect_off.height < rect.y+rect.height));
 }
 
 
@@ -56,7 +79,24 @@ struct Toggle {
   bool active;
 }
 <* Draw/Update toggle *>
-fn bool Toggle.draw(&self) {
-  return rg::guiToggle(self.rect, self.text, &self.active);
+fn bool Toggle.draw(&self, Vector2 offset = {0,0}) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+  if (rg::guiCheckBox(rect_off, self.text, &self.active)) {
+    self.active = !self.active;
+  }
+  return self.active;
+}
+<* Frees structure *>
+fn void Toggle.free(&self) {
+  self.text.free();
+}
+<* Calculates whether rect is winthin input *>
+fn bool Toggle.within_rect(&self, Vector2 offset, Rectangle rect) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+  return ((rect_off.x+rect_off.width+((float)self.text.len*5) > rect.x) && (rect_off.x < rect.x+rect.width) && (rect_off.y > rect.y) && (rect_off.y+rect_off.height < rect.y+rect.height));
 }
 

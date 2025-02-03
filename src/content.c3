@@ -12,6 +12,9 @@ struct Content {
   String game_name;
 
   DropdownBox section_box;
+  DropdownBox version_sel;
+  String[] versions;
+  bool version_enabled;
 
   ScrollPanel backpanel;
   List(<ContentBox>) content_boxes;
@@ -54,34 +57,109 @@ fn Content! Yaml.create_content(&self) {
   if (catch content) return ContentFault.MISSING_ELEMENT?;
 
   //* create section Dropdown
-  output.section_box = {.rect = {20,20,350,30}, .str = content.convert_keys_to_string()};
+  output.section_box = {
+    .rect = {20,20,350,30},
+    .str = content.convert_keys_to_string(),
+  };
+
+  //* Check if version tag exists and create dropdown for it
+  TypedValue! version = self.get("versions");
+  if (try version) {
+    output.version_enabled = true;
+    output.version_sel = {
+      .rect = {110,55,150,30},
+      .str = version.convert_array_to_string()!!,
+    };
+    output.versions = output.version_sel.str.split("\n");
+  }
 
   //* Backpanel
+  Rectangle backpanel_rect = {10, 60, 370, 620};
+  if (output.version_enabled) {
+    backpanel_rect.y += 30;
+    backpanel_rect.height -= 30;
+  }
   output.backpanel = {
-    .rect = {10, 60, 370, 620},
-    .content = {0, 0, 345, 595},
+    .rect = backpanel_rect,
+    .content = {0, 0, 345, 0},
   };
 
   //* Iterate through objects to populate
+  float height_total;
   ((yaml::Object*)content.value).@each(; String key, TypedValue val) {
-    float height; 
+    float height;
+    if (output.version_enabled) height += 30;
     ContentBox box;
     //* Sections
-    //io::printfn("%s",key);
     ((yaml::Object*)val.value).@each(; String key_2, TypedValue val_2) {
       //* Secondary Header / First level tag
-      io::printfn("\t%s",key_2);
       if (val_2.type == OBJECT || val_2.type == ARRAY) {
         usz length = val_2.size()!!;
-
-        ContentItems lb;
-        lb.type = LABEL;
-        lb.label = {.rect = {20, 70 + height, 200, 20}, .text = key_2};
+        
+        ContentItems lb; 
+        switch (true) {
+          case key_2.contains("toggle"):
+            lb.type = TOGGLE;
+            lb.toggle = {.rect = {20, 70 + height, 20, 20}, .text = val_2.v_string};
+          default:
+            lb.type = LABEL;
+            lb.label = {.rect = {20, 70 + height, 200, 20}, .text = key_2}; 
+        }
         box.content_items.push(lb);
         height += 20;
+
+        ((yaml::Object*)val_2.value).@each(; String key_3, TypedValue val_3) {
+          ContentItems lb2;
+          switch (true) {
+            case key_3.contains("toggle"):
+              lb2.type = TOGGLE;
+              lb2.toggle = {.rect = {20+20, 70 + height, 20, 20}, .text = val_3.v_string};
+            default:
+              lb2.type = LABEL;
+              lb2.label = {.rect = {20+20, 70 + height, 200, 20}, .text = key_3}; 
+          }
+          box.content_items.push(lb2);
+          height += 25;
+          
+          if (val_3.type == OBJECT || val_3.type == ARRAY) {
+            ((yaml::Object*)val_3.value).@each(; String key_4, TypedValue val_4) {
+              ContentItems lb3;
+              if (output.check_if_version(key_4) && !output.check_version(key_4)) {
+                
+              }
+              switch (true) {
+                case key_4.contains("toggle"):
+                  lb3.type = TOGGLE;
+                  lb3.toggle = {.rect = {20+40, 70 + height, 20, 20}, .text = val_4.v_string};
+                default:
+                  lb3.type = LABEL;
+                  lb3.label = {.rect = {20+40, 70 + height, 200, 20}, .text = key_4}; 
+              }
+              box.content_items.push(lb3);
+              height += 25;
+
+              if (val_4.type == OBJECT || val_4.type == ARRAY) {
+                ((yaml::Object*)val_4.value).@each(; String key_5, TypedValue val_5) {
+                  ContentItems lb4;
+                  switch (true) {
+                    case key_5.contains("toggle"):
+                      lb4.type = TOGGLE;
+                      lb4.toggle = {.rect = {20+60, 70 + height, 20, 20}, .text = val_5.v_string};
+                    default:
+                      lb4.type = LABEL;
+                      lb4.label = {.rect = {20+60, 70 + height, 200, 20}, .text = key_5}; 
+                  }
+                  box.content_items.push(lb4);
+                  height += 25;
+                };
+              }
+            };
+          }
+        };
       }
       //* if ()
     };
+    box.height = height; 
     output.content_boxes.push(box);
   };
 
@@ -97,6 +175,29 @@ fn void Content.update(&self) {
 }
 <* Draws content *>
 fn void Content.draw(&self) {
+  //* Draw content scroll panel
+  self.backpanel.draw();
+
+  //* Draw content
+  for (int i; i < self.content_boxes[self.section_box.chosen].content_items.len(); i++) {
+    ContentItems ci = self.content_boxes[self.section_box.chosen].content_items[i];
+    switch (ci.type) {
+      case LABEL:
+        if (ci.label.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.label.draw(self.backpanel.scroll);
+      case TOGGLE:
+        if (ci.toggle.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.toggle.draw(self.backpanel.scroll);
+      case MONSTERUI: //ci.monster.draw();
+    }
+  }
+
+  //* Draw version box if applicable
+  if (self.version_enabled) self.version_sel.draw(); 
+
+  //* Draw dropdown box
+  if (self.section_box.draw()) {
+    self.backpanel.content = {0,0,345,self.content_boxes[self.section_box.chosen].height};
+  }
+
   switch (self.series_name) {
     case "Pokemon":
       Rectangle scroll_rect = {20, 20 + self.monsterdex_offset, 350, (float)screen_height - 40};
@@ -125,25 +226,33 @@ fn void Content.draw(&self) {
         }
       }
   }
-
-  self.backpanel.draw();
-
-  //* Draw content
-  for (int i; i < self.content_boxes[self.section_box.chosen].content_items.len(); i++) {
-    ContentItems ci = self.content_boxes[self.section_box.chosen].content_items[i];
-    switch (ci.type) {
-      case LABEL: ci.label.draw();
-      case TOGGLE: ci.toggle.draw();
-      case MONSTERUI: //ci.monster.draw();
-    }
+}
+<* Frees all string and lists in prep for new content *>
+fn void Content.reset(&self) {
+  self.series_name.free();
+  self.game_name.free();
+  self.section_box.free();
+  self.version_sel.free();
+  self.backpanel.free();
+  self.content_boxes.free();
+  free(self.monster_collection);
+  self.monsterdex_scrollpanel.free();
+}
+<* Checks if tag is a version *>
+fn bool Content.check_if_version(&self, String str) {
+  for (int i; i < self.versions.len; i++) {
+    if (self.versions[i] == str) return true;
   }
-
-  //* Draw dropdown box
-  self.section_box.draw();
+  return false;
+}
+<* Checks if tag is current version *>
+fn bool Content.check_version(&self, String str) {
+  return (self.versions[self.version_sel.chosen] == str);
 }
 
 struct ContentBox {
   List(<ContentItems>) content_items;
+  float height;
 }
 
 struct ContentItems {
