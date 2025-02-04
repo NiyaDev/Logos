@@ -661,6 +661,28 @@ enum Monsters : int (int gen) {
   MELOETTA = 5,
   GENESECT = 5,
 }
+<**>
+fn Monsters String.to_monster(&self) {
+  String self_upper = self.new_ascii_to_upper();
+
+  for (int i; i < Monsters.len; i++) {
+    String comp = string::format("%s",Monsters.from_ordinal(i), allocator: allocator::heap());
+    io::printfn("%s == %s = %b",comp, self_upper, comp == self_upper);
+    if (comp == self_upper) {
+      comp.free();
+      self_upper.free();
+      return Monsters.from_ordinal(i);
+    }
+    comp.free();
+  }
+  self_upper.free();
+  return MISSINGNO;
+}
+<**>
+fn String Monsters.to_string(self) {
+  return string::format("%s\0", self, allocator: allocator::heap());
+}
+
 
 enum Generation : int (int total) {
   GEN_1 = 151,
@@ -812,7 +834,10 @@ fn void Monsterdex.update(&self) {
 
 
 struct MonsterUI {
-  Toggle toggle;
+  Rectangle rect;
+  Rectangle toggle_rect;
+
+  bool* value;
   
   String name;
   String time;
@@ -822,7 +847,7 @@ struct MonsterUI {
 <* *>
 fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
   MonsterUI output;
-  output.toggle = {.rect = rect};
+  output.toggle_rect = rect;
 
   output.name = self.get_object("name")!!.v_string;
 
@@ -852,3 +877,25 @@ fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
 
   return output;
 }
+<*  *>
+fn void MonsterUI.draw(&self, Vector2 offset = {0,0}) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+
+  Rectangle rect_tog = rect_off;
+  rect_tog.y += 40;
+  rect_tog.width = 20;
+  rect_tog.height = 20;
+  rg::guiCheckBox(rect_tog, "", self.value);
+
+  rg::guiLabel(rect_off, self.name);
+}
+<*  *>
+fn bool MonsterUI.within_rect(&self, Vector2 offset, Rectangle rect) {
+  Rectangle rect_off = self.rect;
+  rect_off.x += offset.x;
+  rect_off.y += offset.y;
+  return ((rect_off.x+rect_off.width > rect.x) && (rect_off.x < rect.x+rect.width) && (rect_off.y > rect.y) && (rect_off.y+rect_off.height < rect.y+rect.height));
+}
+

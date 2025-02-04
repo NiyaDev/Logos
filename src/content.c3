@@ -131,27 +131,50 @@ fn Content! Yaml.create_content(&self) {
                 case key_4.contains("toggle"):
                   lb3.type = TOGGLE;
                   lb3.toggle = {.rect = {20+40, 70 + height, 20, 20}, .text = val_4.v_string};
+                  box.content_items.push(lb3);
+                  height += 25;
+                case key_4.contains("monster"):
+                  Rectangle rect = {20+40, 70 + height, 100, 100};
+                  yaml::Object* mon = (yaml::Object*)val_4.value;
+                  lb3.type = MONSTERUI;
+                  lb3.monster = {
+                    .rect = rect,
+                    .toggle_rect = {rect.x, rect.y+40, 20, 20},
+                    .levels = mon.get("levels")!!.v_string,
+                  };
+                  lb3.monster.name = mon.get("name")!!.v_string;
+                  Monsters monster = lb3.monster.name.to_monster();
+                  lb3.monster.value = &output.monster_collection[monster.ordinal];
+                  //Monsters monster = Monsters.from_ordinal(mon.get("name")!!.v_int);
+                  //lb3.monster.value = &output.monster_collection[monster.ordinal];
+                  //lb3.monster.name = monster.to_string();
+                  if (mon.has_key("time")) lb3.monster.time = mon.get("time")!!.convert_array_to_string()!!;
+                  if (mon.has_key("chance")) lb3.monster.chance = mon.get("chance")!!.convert_array_to_string()!!;
+
+                  box.content_items.push(lb3);
+                  height += 100; 
                 default:
                   lb3.type = LABEL;
-                  lb3.label = {.rect = {20+40, 70 + height, 200, 20}, .text = key_4}; 
-              }
-              box.content_items.push(lb3);
-              height += 25;
-
-              if (val_4.type == OBJECT || val_4.type == ARRAY) {
-                ((yaml::Object*)val_4.value).@each(; String key_5, TypedValue val_5) {
-                  ContentItems lb4;
-                  switch (true) {
-                    case key_5.contains("toggle"):
-                      lb4.type = TOGGLE;
-                      lb4.toggle = {.rect = {20+60, 70 + height, 20, 20}, .text = val_5.v_string};
-                    default:
-                      lb4.type = LABEL;
-                      lb4.label = {.rect = {20+60, 70 + height, 200, 20}, .text = key_5}; 
+                  lb3.label = {.rect = {20+40, 70 + height, 200, 20}, .text = key_4};
+                  
+                  if (val_4.type == OBJECT || val_4.type == ARRAY) {
+                    ((yaml::Object*)val_4.value).@each(; String key_5, TypedValue val_5) {
+                      ContentItems lb4;
+                      switch (true) {
+                        case key_5.contains("toggle"):
+                          lb4.type = TOGGLE;
+                          lb4.toggle = {.rect = {20+60, 70 + height, 20, 20}, .text = val_5.v_string};
+                        default:
+                          lb4.type = LABEL;
+                          lb4.label = {.rect = {20+60, 70 + height, 200, 20}, .text = key_5}; 
+                      }
+                      box.content_items.push(lb4);
+                      height += 25;
+                    };
                   }
-                  box.content_items.push(lb4);
+
+                  box.content_items.push(lb3);
                   height += 25;
-                };
               }
             };
           }
@@ -186,7 +209,8 @@ fn void Content.draw(&self) {
         if (ci.label.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.label.draw(self.backpanel.scroll);
       case TOGGLE:
         if (ci.toggle.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.toggle.draw(self.backpanel.scroll);
-      case MONSTERUI: //ci.monster.draw();
+      case MONSTERUI:
+        if (ci.monster.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.monster.draw(self.backpanel.scroll);
     }
   }
 
