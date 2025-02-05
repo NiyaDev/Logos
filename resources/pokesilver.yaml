@@ -8,13 +8,12 @@ versions: [Gold,Silver,Crystal]
 content:
   New Bark Town:
     Events:
-      toggle_1: Get starter
-      toggle_2: Name Rival (Acievement)
-      toggle_3: Return Pokemon Egg
+      toggle_rival: Name Rival (Acievement)
+      toggle_returnegg: Return Pokemon Egg
     Items:
-      toggle_1: Everstone - Show Elm Togepi
-      toggle_2: Master Ball - Earn all 8 Johto badges
-      toggle_3: SS Ticket - Enter Hall of Fame
+      toggle_everstone: Everstone - Show Elm Togepi
+      toggle_masterball: Master Ball - Earn all 8 Johto badges
+      toggle_ssticket: SS Ticket - Enter Hall of Fame
     Pokemon:
       Gift:
         monster_1:
@@ -94,7 +93,7 @@ content:
   Route 29:
     Pokemon:
       Gold:
-        grass:
+        Grass:
           monster_1:
             name: Pidgey
             time: [M,D]
@@ -120,18 +119,18 @@ content:
             time: [N]
             chance: [85]
             levels: 2-4
-        headbutt_mod:
+        Headbutt Rare:
           monster_1:
             name: Spearow
-            time: [A]
+            time: [An]
             chance: [80]
             levels: 10
           monster_2:
             name: Aipom
-            time: [A]
+            time: [An]
             chance: [20]
             levels: 10
-        headbutt_low:
+        Headbutt Normal:
           monster_1:
             name: Spearow
             time: [A]
@@ -148,7 +147,7 @@ content:
             chance: [30]
             levels: 10
       Silver:
-        grass:
+        Grass:
           monster_1:
             name: Pidgey
             time: [M,D]
@@ -174,7 +173,7 @@ content:
             time: [N]
             chance: [85]
             levels: 2-4
-        headbutt_mod:
+        Headbutt Rare:
           monster_1:
             name: Spearow
             time: [A]
@@ -185,7 +184,7 @@ content:
             time: [A]
             chance: [20]
             levels: 10
-        headbutt_low:
+        Headbutt Normal:
           monster_1:
             name: Spearow
             time: [A]
@@ -202,7 +201,7 @@ content:
             chance: [30]
             levels: 10
       Crystal:
-        grass:
+        Grass:
           monster_1:
             name: Pidgey
             time: [M,D]
@@ -233,7 +232,7 @@ content:
             time: [M,D]
             chance: [5,5]
             levels: 3
-        headbutt_mod:
+        Headbutt Rare:
           monster_1:
             name: Exeggcute
             time: [A]
@@ -254,7 +253,7 @@ content:
             time: [A]
             chance: [15]
             levels: 10
-        headbutt_low:
+        Headbutt Normal:
           monster_1:
             name: Exeggcute
             time: [A]
@@ -271,12 +270,12 @@ content:
             chance: [30]
             levels: 10
     Items:
-      toggle_1: Pink Bow - Tuscany on Tue. post Zephyr badge
+      toggle_pinkbow: Pink Bow - Tuscany on Tue. post Zephyr badge
       Gold:
-        toggle_1: Potion - East of the northeasternmost grass patch
+        toggle_route29potion: Potion - East of the northeasternmost grass patch
       Crystal:
-        toggle_1: Potion - East of the northeasternmost grass patch
+        toggle_route29potion: Potion - East of the northeasternmost grass patch
 
   Cherrygrove City:
     Items:
-
+        toggle_

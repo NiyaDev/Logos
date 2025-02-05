@@ -23,8 +23,14 @@ fn String! TypedValue.convert_array_to_string(&self) {
 
   String output;
   for (int i; i < self.size()!!; i++) {
-    // TODO: Error out if array members aren't strings 
-    output = output.concat(self.get_array(i)!!.v_string);
+    // TODO: Error out if array members aren't strings
+    switch (self.get_array(i)!!.type) {
+      case STRING:
+        output = output.concat(self.get_array(i)!!.v_string); 
+      case INT:
+        output = output.concat(string::format("%d",self.get_array(i)!!.v_int, allocator: allocator::heap()));
+      default:
+    } 
     if (i < self.size()!! - 1) output = output.concat("\n");
   }
   return output;

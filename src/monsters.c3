@@ -667,7 +667,6 @@ fn Monsters String.to_monster(&self) {
 
   for (int i; i < Monsters.len; i++) {
     String comp = string::format("%s",Monsters.from_ordinal(i), allocator: allocator::heap());
-    io::printfn("%s == %s = %b",comp, self_upper, comp == self_upper);
     if (comp == self_upper) {
       comp.free();
       self_upper.free();
@@ -877,25 +876,50 @@ fn MonsterUI TypedValue.new_ui(&self, Rectangle rect) {
 
   return output;
 }
-<*  *>
-fn void MonsterUI.draw(&self, Vector2 offset = {0,0}) {
+<* Draw UI to screen *>
+fn void MonsterUI.draw(&self, Vector2 offset = {0,0}, bool left = true) {
   Rectangle rect_off = self.rect;
-  rect_off.x += offset.x;
-  rect_off.y += offset.y;
+  if (left) {
+    rect_off.x += offset.x;
+    rect_off.y += offset.y;
+  } else {
+    rect_off.x += offset.x + 150;
+    rect_off.y += offset.y -  50;
+  }
 
   Rectangle rect_tog = rect_off;
-  rect_tog.y += 40;
   rect_tog.width = 20;
   rect_tog.height = 20;
-  rg::guiCheckBox(rect_tog, "", self.value);
+  rg::guiCheckBox(rect_tog, self.name, self.value); 
 
-  rg::guiLabel(rect_off, self.name);
+  Rectangle rect_time = rect_off;
+  if (self.time != "") {
+    rect_time.x += 80;
+    if (self.time.len > 1) rect_time.y += 10; 
+    rect_tog.height = 20;
+    rg::guiLabel(rect_time, self.time);
+  }
+
+  Rectangle rect_chance = rect_time;
+  if (self.chance != "") {
+    rect_chance.x += 15;
+    rg::guiLabel(rect_chance, self.chance);
+  }
+
+  Rectangle rect_level = rect_off;
+  rect_tog.height = 20; 
+  rg::guiLabel(rect_level, self.levels);
 }
-<*  *>
-fn bool MonsterUI.within_rect(&self, Vector2 offset, Rectangle rect) {
+<* Check whether ui is within rect *>
+fn bool MonsterUI.within_rect(&self, Vector2 offset, Rectangle rect, bool left = true) {
   Rectangle rect_off = self.rect;
-  rect_off.x += offset.x;
-  rect_off.y += offset.y;
+  if (left) {
+    rect_off.x += offset.x;
+    rect_off.y += offset.y;
+  } else {
+    rect_off.x += offset.x + 150;
+    rect_off.y += offset.y -  50;
+  }
   return ((rect_off.x+rect_off.width > rect.x) && (rect_off.x < rect.x+rect.width) && (rect_off.y > rect.y) && (rect_off.y+rect_off.height < rect.y+rect.height));
 }
 

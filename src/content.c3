@@ -122,6 +122,7 @@ fn Content! Yaml.create_content(&self) {
           height += 25;
           
           if (val_3.type == OBJECT || val_3.type == ARRAY) {
+            int mon_count;
             ((yaml::Object*)val_3.value).@each(; String key_4, TypedValue val_4) {
               ContentItems lb3;
               if (output.check_if_version(key_4) && !output.check_version(key_4)) {
@@ -134,40 +135,92 @@ fn Content! Yaml.create_content(&self) {
                   box.content_items.push(lb3);
                   height += 25;
                 case key_4.contains("monster"):
-                  Rectangle rect = {20+40, 70 + height, 100, 100};
+                  Rectangle rect = {20+40, 70 + height, 100, 50};
                   yaml::Object* mon = (yaml::Object*)val_4.value;
+
                   lb3.type = MONSTERUI;
                   lb3.monster = {
                     .rect = rect,
                     .toggle_rect = {rect.x, rect.y+40, 20, 20},
-                    .levels = mon.get("levels")!!.v_string,
                   };
+
+                  //* Name
                   lb3.monster.name = mon.get("name")!!.v_string;
                   Monsters monster = lb3.monster.name.to_monster();
                   lb3.monster.value = &output.monster_collection[monster.ordinal];
-                  //Monsters monster = Monsters.from_ordinal(mon.get("name")!!.v_int);
-                  //lb3.monster.value = &output.monster_collection[monster.ordinal];
-                  //lb3.monster.name = monster.to_string();
+
+                  //* Time
                   if (mon.has_key("time")) lb3.monster.time = mon.get("time")!!.convert_array_to_string()!!;
+
+                  //* Chances
                   if (mon.has_key("chance")) lb3.monster.chance = mon.get("chance")!!.convert_array_to_string()!!;
 
+                  //* Levels
+                  TypedValue mon_levels = mon.get("levels")!!;
+                  switch (mon_levels.type) {
+                    case STRING:
+                      lb3.monster.levels = string::format("lv: %s", mon_levels.v_string, allocator: allocator::heap());
+                    case INT:
+                      lb3.monster.levels = string::format("lv: %d", mon_levels.v_int, allocator: allocator::heap());
+                    default:
+                  }
+
                   box.content_items.push(lb3);
-                  height += 100; 
+                  if (mon_count % 2 == 0) height += 50;
+                  mon_count++;
                 default:
                   lb3.type = LABEL;
                   lb3.label = {.rect = {20+40, 70 + height, 200, 20}, .text = key_4};
                   
                   if (val_4.type == OBJECT || val_4.type == ARRAY) {
+                    int mon_count_1;
                     ((yaml::Object*)val_4.value).@each(; String key_5, TypedValue val_5) {
                       ContentItems lb4;
                       switch (true) {
                         case key_5.contains("toggle"):
                           lb4.type = TOGGLE;
                           lb4.toggle = {.rect = {20+60, 70 + height, 20, 20}, .text = val_5.v_string};
+                          box.content_items.push(lb4);
+                          height += 25;
+                        case key_5.contains("monster"):
+                          Rectangle rect = {20+60, 70 + height, 100, 50};
+                          yaml::Object* mon1 = (yaml::Object*)val_5.value;
+
+                          lb4.type = MONSTERUI;
+                          lb4.monster = {
+                            .rect = rect,
+                            .toggle_rect = {rect.x, rect.y+60, 20, 20},
+                          };
+
+                          //* Name
+                          lb4.monster.name = mon1.get("name")!!.v_string;
+                          Monsters monster1 = lb4.monster.name.to_monster();
+                          lb4.monster.value = &output.monster_collection[monster1.ordinal];
+
+                          //* Time
+                          if (mon1.has_key("time")) lb4.monster.time = mon1.get("time")!!.convert_array_to_string()!!;
+
+                          //* Chances
+                          if (mon1.has_key("chance")) lb4.monster.chance = mon1.get("chance")!!.convert_array_to_string()!!;
+
+                          //* Levels
+                          TypedValue mon_levels1 = mon1.get("levels")!!;
+                          switch (mon_levels1.type) {
+                            case STRING:
+                              lb4.monster.levels = string::format("lv: %s", mon_levels1.v_string, allocator: allocator::heap());
+                            case INT:
+                              lb4.monster.levels = string::format("lv: %d", mon_levels1.v_int, allocator: allocator::heap());
+                            default:
+                          }
+
+                          box.content_items.push(lb4);
+                          if (mon_count_1 % 2 == 0) height += 50;
+                          mon_count_1++;
                         default:
                           lb4.type = LABEL;
-                          lb4.label = {.rect = {20+60, 70 + height, 200, 20}, .text = key_5}; 
+                          lb4.label = {.rect = {20+60, 70 + height, 200, 20}, .text = key_5};
                       }
+
                       box.content_items.push(lb4);
                       height += 25;
                     };
@@ -202,15 +255,20 @@ fn void Content.draw(&self) {
   self.backpanel.draw();
 
   //* Draw content
+  int count;
   for (int i; i < self.content_boxes[self.section_box.chosen].content_items.len(); i++) {
     ContentItems ci = self.content_boxes[self.section_box.chosen].content_items[i];
     switch (ci.type) {
       case LABEL:
         if (ci.label.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.label.draw(self.backpanel.scroll);
+        count = 0;
       case TOGGLE:
         if (ci.toggle.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.toggle.draw(self.backpanel.scroll);
+        count = 0; 
       case MONSTERUI:
-        if (ci.monster.within_rect(self.backpanel.scroll, self.backpanel.rect)) ci.monster.draw(self.backpanel.scroll);
+        bool left = (count % 2 == 0);
+        if (ci.monster.within_rect(self.backpanel.scroll, self.backpanel.rect, left)) ci.monster.draw(self.backpanel.scroll, left);
+        count++;
     }
   }
 
