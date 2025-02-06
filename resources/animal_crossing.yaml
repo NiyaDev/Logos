@@ -1,0 +1,1386 @@
+%YAML 1.2
+---
+
+series: Animal Crossing
+game: gc
+
+total: 1247
+
+content:
+  Gyroid: 
+    toggle_minigargloid: Mini gargloid
+    toggle_gargloid: Gargloid
+    toggle_tallgargloid: Tall gargloid
+    toggle_miniwarbloid: Mini warbloid
+    toggle_warbloid: Warbloid
+    toggle_tallwarbloid: Tall warbloid
+    toggle_minifreakoid: Mini freakoid
+    toggle_megafreakoid: Mega freakoid
+    toggle_miniechoid: Mini echoid
+    toggle_megaechoid: Mega echoid
+    toggle_tallechoid: Tall echoid
+    toggle_minigongoid: Mini gongoid
+    toggle_megagongoid: Mega gongoid
+    toggle_gongoid: Gongoid
+    toggle_tallgongoid: Tall gongoid
+    toggle_minipoltergoid: Mini poltergoid
+    toggle_megapoltergoid: Mega poltergoid
+    toggle_poltergoid: Poltergoid
+    toggle_tallpoltergoid: Tall poltergoid
+    toggle_minilamentoid: Mini lamentoid
+    toggle_megalamentoid: Mega lamentoid
+    toggle_lamentoid: Lamentoid
+    toggle_talllamentoid: Tall lamentoid
+    toggle_minimetatoid: Mini metatoid
+    toggle_metatoid: Metatoid
+    toggle_minisquelchoid: Mini squelchoid
+    toggle_megasquelchoid: Mega squelchoid
+    toggle_squelchoid: Squelchoid
+    toggle_minifizzoid: Mini fizzoid
+    toggle_megafizzoid: Mega fizzoid
+    toggle_miniplinkoid: Mini plinkoid
+    toggle_megaplinkoid: Mega plinkoid
+    toggle_plinkoid: Plinkoid
+    toggle_minicroakoid: Mini croakoid
+    toggle_megacroakoid: Mega croakoid
+    toggle_croakoid: Croakoid
+    toggle_tallcroakoid: Tall croakoid
+    toggle_ministrumboid: Mini strumboid
+    toggle_megastrumboid: Mega strumboid
+    toggle_strumboid: Strumboid
+    toggle_tallstrumboid: Tall strumboid
+    toggle_minirustoid: Mini rustoid
+    toggle_megarustoid: Mega rustoid
+    toggle_rustoid: Rustoid
+    toggle_minibuzzoid: Mini buzzoid
+    toggle_megabuzzoid: Mega buzzoid
+    toggle_buzzoid: Buzzoid
+    toggle_tallbuzzoid: Tall buzzoid
+    toggle_minitimpanoid: Mini timpanoid
+    toggle_megatimpanoid: Mega timpanoid
+    toggle_timpanoid: Timpanoid
+    toggle_talltimpanoid: Tall timpanoid
+    toggle_minidekkoid: Mini dekkoid
+    toggle_megadekkoid: Mega dekkoid
+    toggle_dekkoid: Dekkoid
+    toggle_minidrilloid: Mini drilloid
+    toggle_megadrilloid: Mega drilloid
+    toggle_drilloid: Drilloid
+    toggle_megaoboid: Mega oboid
+    toggle_oboid: Oboid
+    toggle_talloboid: Tall oboid
+    toggle_miniclankoid: Mini clankoid
+    toggle_megaclankoid: Mega clankoid
+    toggle_clankoid: Clankoid
+    toggle_tallclankoid: Tall clankoid
+    toggle_minialloid: Mini alloid
+    toggle_megaalloid: Mega alloid
+    toggle_tallalloid: Tall alloid
+    toggle_minidinkoid: Mini dinkoid
+    toggle_megadinkoid: Mega dinkoid
+    toggle_talldroploid: Tall droploid
+    toggle_miniharmonoid: Mini harmonoid
+    toggle_megaharmonoid: Mega harmonoid
+    toggle_harmonoid: Harmonoid
+    toggle_tallharmonoid: Tall harmonoid
+    toggle_minitootoid: Mini tootoid
+    toggle_megatootoid: Mega tootoid
+    toggle_tootoid: Tootoid
+    toggle_minihowloid: Mini howloid
+    toggle_megahowloid: Mega howloid
+    toggle_howloid: Howloid
+    toggle_minibowtoid: Mini bowtoid
+    toggle_megabowtoid: Mega bowtoid
+    toggle_bowtoid: Bowtoid
+    toggle_tallbowtoid: Tall bowtoid
+    toggle_mininebuloid: Mini nebuloid
+    toggle_meganebuloid: Mega nebuloid
+    toggle_squatnebuloid: Squat nebuloid
+    toggle_nebuloid: Nebuloid
+    toggle_tallnebuloid: Tall nebuloid
+    toggle_slimnebuloid: Slim nebuloid
+    toggle_weedingloid: Wee dingloid
+    toggle_minidingloid: Mini dingloid
+    toggle_megadingloid: Mega dingloid
+    toggle_squatdingloid: Squat dingloid
+    toggle_dingloid: Dingloid
+    toggle_talldingloid: Tall dingloid
+    toggle_minipuffoid: Mini puffoid
+    toggle_megapuffoid: Mega puffoid
+    toggle_tallpuffoid: Tall puffoid
+    toggle_minilullaboid: Mini lullaboid
+    toggle_megalullaboid: Mega lullaboid
+    toggle_lullaboid: Lullaboid
+    toggle_talllullaboid: Tall lullaboid
+    toggle_megapercoloid: Mega percoloid
+    toggle_tallpercoloid: Tall percoloid
+    toggle_minisproid: Mini sproid
+    toggle_megasproid: Mega sproid
+    toggle_sproid: Sproid
+    toggle_tallsproid: Tall sproid
+    toggle_minirhythmoid: Mini rhythmoid
+    toggle_rhythmoid: Rhythmoid
+    toggle_minioombloid: Mini oombloid
+    toggle_megaoombloid: Mega oombloid
+    toggle_oombloid: Oombloid
+    toggle_talloombloid: Tall oombloid
+    toggle_megabovoid: Mega bovoid
+    toggle_tallbovoid: Tall bovoid
+    toggle_minisputnoid: Mini sputnoid
+    toggle_megasputnoid: Mega sputnoid
+    toggle_sputnoid: Sputnoid
+    toggle_tallsputnoid: Tall sputnoid
+    toggle_miniquazoid: Mini quazoid
+    toggle_megaquazoid: Mega quazoid
+    toggle_quazoid: Quazoid
+    toggle_tallquazoid: Tall quazoid
+    toggle_slimquazoid: Slim quazoid
+  Blue Series:
+    purchase_bluebed: Blue bed
+      cost: 2100
+      owner: Redd
+    purchase_bluebench: Blue bence
+      cost: 1900
+      owner: Tom Nook
+    purchase_bluebookcase: 
+      cost: 1900
+      owner: Tom Nook
+    purchase_bluebureau: 
+      cost: 2160
+      owner: Tom Nook
+    purchase_bluecabinet: 
+      cost: 2400
+      owner: Tom Nook
+    purchase_bluechair: 
+      cost: 1900
+      owner: Tom Nook
+    purchase_blueclock: 
+      cost: 1600
+      owner: Tom Nook
+    purchase_bluedresser: 
+      cost: 2100
+      owner: Tom Nook
+    purchase_bluetable: 
+      cost: 1800
+      owner: Redd 
+    purchase_bluewardrobe: 
+      cost: 1920
+      owner: Tom Nook
+    purchase_bluewall: 
+      cost: 1260
+      owner: Tom Nook
+    purchase_blueflooring: 
+      cost: 1580
+      owner: Tom Nook
+  Furniture:
+    toggle_iceclimber: Ice Climber
+    toggle_mariobros: Mario Bros
+    toggle_bluebed: Blue bed
+    toggle_bluebench: Blue bench
+    toggle_bluebookcase: Blue bookcase
+    toggle_bluebureau: Blue bureau
+    toggle_bluecabinet: Blue cabinet
+    toggle_bluechair: Blue chair
+    toggle_blueclock: Blue clock
+    toggle_bluedresser: Blue dresser
+    toggle_bluetable: Blue table
+    toggle_bluewardrobe: Blue wardrobe
+    toggle_cabanaarmchair: Cabana armchair
+    toggle_cabanabed: Cabana bed
+    toggle_cabanabookcase: Cabana bookcase
+    toggle_cabanachair: Cabana chair
+    toggle_cabanadresser: Cabana dresser
+    toggle_cabanalamp: Cabana lamp
+    toggle_cabanascreen: Cabana screen
+    toggle_cabanatable: Cabana table
+    toggle_cabanavanity: Cabana vanity
+    toggle_cabanawardrobe: Cabana wardrobe
+    toggle_cabinarmchair: Cabin armchair
+    toggle_cabinbed: Cabin bed
+    toggle_cabinbookcase: Cabin bookcase
+    toggle_cabinchair: Cabin chair
+    toggle_cabinclock: Cabin clock
+    toggle_cabincouch: Cabin couch
+    toggle_cabindresser: Cabin dresser
+    toggle_cabinlowtable: Cabin low table
+    toggle_cabintable: Cabin table
+    toggle_cabinwardrobe: Cabin wardrobe
+    toggle_classicbed: Classic bed
+    toggle_classiccabinet: Classic cabinet
+    toggle_classicchair: Classic chair
+    toggle_classicclock: Classic clock
+    toggle_classicdesk: Classic desk
+    toggle_classichutch: Classic hutch
+    toggle_classicsofa: Classic sofa
+    toggle_classictable: Classic table
+    toggle_classicvanity: Classic vanity
+    toggle_classicwardrobe: Classic wardrobe
+    toggle_exoticbed: Exotic bed
+    toggle_exoticbench: Exotic bench
+    toggle_exoticbureau: Exotic bureau
+    toggle_exoticchair: Exotic chair
+    toggle_exoticchest: Exotic chest
+    toggle_exoticendtable: Exotic end table
+    toggle_exoticlamp: Exotic lamp
+    toggle_exoticscreen: Exotic screen
+    toggle_exotictable: Exotic table
+    toggle_exoticwardrobe: Exotic wardrobe
+    toggle_greenbed: Green bed
+    toggle_greenbench: Green bench
+    toggle_greenchair: Green chair
+    toggle_greencounter: Green counter
+    toggle_greendesk: Green desk
+    toggle_greendresser: Green dresser
+    toggle_greenlamp: Green lamp
+    toggle_greenpantry: Green pantry
+    toggle_greentable: Green table
+    toggle_greenwardrobe: Green wardrobe
+    toggle_kiddiebed: Kiddie bed
+    toggle_kiddiebookcase: Kiddie bookcase
+    toggle_kiddiebureau: Kiddie bureau
+    toggle_kiddiechair: Kiddie chair
+    toggle_kiddieclock: Kiddie clock
+    toggle_kiddiecouch: Kiddie couch
+    toggle_kiddiedresser: Kiddie dresser
+    toggle_kiddiestereo: Kiddie stereo
+    toggle_kiddietable: Kiddie table
+    toggle_kiddiewardrobe: Kiddie wardrobe
+    toggle_lovelyarmchair: Lovely armchair
+    toggle_lovelyarmoire: Lovely armoire
+    toggle_lovelybed: Lovely bed
+    toggle_lovelychair: Lovely chair
+    toggle_lovelydresser: Lovely dresser
+    toggle_lovelyendtable: Lovely end table
+    toggle_lovelykitchen: Lovely kitchen
+    toggle_lovelylamp: Lovely lamp
+    toggle_lovelytable: Lovely table
+    toggle_lovelyvanity: Lovely vanity
+    toggle_modernbed: Modern bed
+    toggle_moderncabinet: Modern cabinet
+    toggle_modernchair: Modern chair
+    toggle_moderndesk: Modern desk
+    toggle_moderndresser: Modern dresser
+    toggle_modernendtable: Modern end table
+    toggle_modernlamp: Modern lamp
+    toggle_modernsofa: Modern sofa
+    toggle_moderntable: Modern table
+    toggle_modernwardrobe: Modern wardrobe
+    toggle_rancharmchair: Ranch armchair
+    toggle_ranchbed: Ranch bed
+    toggle_ranchbookcase: Ranch bookcase
+    toggle_ranchchair: Ranch chair
+    toggle_ranchcouch: Ranch couch
+    toggle_ranchdresser: Ranch dresser
+    toggle_ranchhutch: Ranch hutch
+    toggle_ranchtable: Ranch table
+    toggle_ranchteatable: Ranch tea table
+    toggle_ranchwardrobe: Ranch wardrobe
+    toggle_regalarmoire: Regal armoire
+    toggle_regalbed: Regal bed
+    toggle_regalbookcase: Regal bookcase
+    toggle_regalchair: Regal chair
+    toggle_regalcupboard: Regal cupboard
+    toggle_regaldresser: Regal dresser
+    toggle_regallamp: Regal lamp
+    toggle_regalsofa: Regal sofa
+    toggle_regaltable: Regal table
+    toggle_regalvanity: Regal vanity
+    toggle_harvestbed: Harvest bed
+    toggle_harvestbureau: Harvest bureau
+    toggle_harvestchair: Harvest chair
+    toggle_harvestclock: Harvest clock
+    toggle_harvestdresser: Harvest dresser
+    toggle_harvestlamp: Harvest lamp
+    toggle_harvestmirror: Harvest mirror
+    toggle_harvestsofa: Harvest sofa
+    toggle_harvesttable: Harvest table
+    toggle_harvesttv: Harvest TV
+    toggle_jinglebed: Jingle bed
+    toggle_jinglechair: Jingle chair
+    toggle_jingleclock: Jingle clock
+    toggle_jingledresser: Jingle dresser
+    toggle_jinglelamp: Jingle lamp
+    toggle_jinglepiano: Jingle piano
+    toggle_jingleshelves: Jingle shelves
+    toggle_jinglesofa: Jingle sofa
+    toggle_jingletable: Jingle table
+    toggle_jinglewardrobe: Jingle wardrobe
+    toggle_snowmanbed: Snowman bed
+    toggle_snowmanchair: Snowman chair
+    toggle_snowmanclock: Snowman clock
+    toggle_snowmandresser: Snowman dresser
+    toggle_snowmanfridge: Snowman fridge
+    toggle_snowmanlamp: Snowman lamp
+    toggle_snowmansofa: Snowman sofa
+    toggle_snowmantable: Snowman table
+    toggle_snowmantv: Snowman TV
+    toggle_snowmanwardrobe: Snowman wardrobe
+    toggle_spookybed: Spooky bed
+    toggle_spookybookcase: Spooky bookcase
+    toggle_spookychair: Spooky chair
+    toggle_spookyclock: Spooky clock
+    toggle_spookydresser: Spooky dresser
+    toggle_spookylamp: Spooky lamp
+    toggle_spookysofa: Spooky sofa
+    toggle_spookytable: Spooky table
+    toggle_spookyvanity: Spooky vanity
+    toggle_spookywardrobe: Spooky wardrobe
+    toggle_jack-in-the-box: Jack-in-the-box
+    toggle_jack-o&#39;-lantern: Jack-o&#39;-lantern
+    toggle_backyardpool: Backyard pool
+    toggle_barbecue: Barbecue
+    toggle_birdbath: Bird bath
+    toggle_birdfeeder: Bird feeder
+    toggle_birdhouse: Birdhouse
+    toggle_bugzapper: Bug zapper
+    toggle_gardengnome: Garden gnome
+    toggle_hammock: Hammock
+    toggle_lawnchair: Lawn chair
+    toggle_lawnmower: Lawn mower
+    toggle_mr.flamingo: Mr. Flamingo
+    toggle_mrs.flamingo: Mrs. Flamingo
+    toggle_picnictable: Picnic table
+    toggle_sprinkler: Sprinkler
+    toggle_tikitorch: Tiki torch
+    toggle_bluecorner: Blue corner
+    toggle_boxingbarricade: Boxing barricade
+    toggle_boxingmat: Boxing mat
+    toggle_judge&#39;sbell: Judge&#39;s bell
+    toggle_neutralcorner: Neutral corner
+    toggle_redcorner: Red corner
+    toggle_ringsidetable: Ringside table
+    toggle_sandbag: Sandbag
+    toggle_speedbag: Speed bag
+    toggle_weightbench: Weight bench
+    toggle_blackbishop: Black bishop
+    toggle_blackking: Black king
+    toggle_blackknight: Black knight
+    toggle_blackpawn: Black pawn
+    toggle_blackqueen: Black queen
+    toggle_blackrook: Black rook
+    toggle_whitebishop: White bishop
+    toggle_whiteking: White king
+    toggle_whiteknight: White knight
+    toggle_whitepawn: White pawn
+    toggle_whitequeen: White queen
+    toggle_whiterook: White rook
+    toggle_cementmixer: Cement mixer
+    toggle_detourarrow: Detour arrow
+    toggle_detoursign: Detour sign
+    toggle_flagmansign: Flagman sign
+    toggle_greendrum: Green drum
+    toggle_handcart: Handcart
+    toggle_haz-matbarrel: Haz-mat barrel
+    toggle_ironframe: Iron frame
+    toggle_jackhammer: Jackhammer
+    toggle_jerseybarrier: Jersey barrier
+    toggle_manholecover: Manhole cover
+    toggle_menatworksign: Men at work sign
+    toggle_mergesign: Merge sign
+    toggle_oildrum: Oil drum
+    toggle_orangecone: Orange cone
+    toggle_sawhorse: Saw horse
+    toggle_speedsign: Speed sign
+    toggle_steamroller: Steam roller
+    toggle_trafficcone: Traffic cone
+    toggle_wetroadwaysign: Wet roadway sign
+    toggle_deerscare: Deer scare
+    toggle_gardenpond: Garden pond
+    toggle_lowlantern: Low lantern
+    toggle_pondlantern: Pond lantern
+    toggle_shrinelantern: Shrine lantern
+    toggle_talllantern: Tall lantern
+    toggle_?block: ? block
+    toggle_brickblock: Brick block
+    toggle_cannon: Cannon
+    toggle_coin: Coin
+    toggle_fireflower: Fire flower
+    toggle_flagpole: Flagpole
+    toggle_greenpipe: Green pipe
+    toggle_koopashell: Koopa shell
+    toggle_starman: Starman
+    toggle_supermushroom: Super mushroom
+    toggle_darkstone: Dark stone
+    toggle_gardenstone: Garden stone
+    toggle_leaningstone: Leaning stone
+    toggle_mossystone: Mossy stone
+    toggle_standingstone: Standing stone
+    toggle_stonecouple: Stone couple
+    toggle_teacher&#39;schair: Teacher&#39;s chair
+    toggle_chalkboard: Chalk board
+    toggle_cubbyhole: Cubby hole
+    toggle_flip-topdesk: Flip-top desk
+    toggle_schooldesk: School desk
+    toggle_foldingchair: Folding chair
+    toggle_leftydesk: Lefty desk
+    toggle_rightydesk: Righty desk
+    toggle_lettercubby: Letter cubby
+    toggle_hamstercage: Hamster cage
+    toggle_mop: Mop
+    toggle_sciencetable: Science table
+    toggle_teacher&#39;sdesk: Teacher&#39;s desk
+    toggle_vaultinghorse: Vaulting horse
+    toggle_asteroid: Asteroid
+    toggle_flyingsaucer: Flying saucer
+    toggle_lunarlander: Lunar lander
+    toggle_lunarrover: Lunar rover
+    toggle_rocket: Rocket
+    toggle_satellite: Satellite
+    toggle_spaceshuttle: Space shuttle
+    toggle_spacestation: Space station
+    toggle_spacemansam: Spaceman Sam
+    toggle_coveredwagon: Covered wagon
+    toggle_cowskull: Cow skull
+    toggle_desertcactus: Desert cactus
+    toggle_saddlefence: Saddle fence
+    toggle_storefront: Storefront
+    toggle_tumbleweed: Tumbleweed
+    toggle_wagonwheel: Wagon wheel
+    toggle_wateringtrough: Watering trough
+    toggle_well: Well
+    toggle_westernfence: Western fence
+    toggle_appleclock: Apple clock
+    toggle_appletv: Apple TV
+    toggle_babybear: Baby bear
+    toggle_mamabear: Mama bear
+    toggle_papabear: Papa bear
+    toggle_mughobonsai: Mugho bonsai
+    toggle_pinebonsai: Pine bonsai
+    toggle_ponderosabonsai: Ponderosa bonsai
+    toggle_cactus: Cactus
+    toggle_roundcactus: Round cactus
+    toggle_tallcactus: Tall cactus
+    toggle_grapefruittable: Grapefruit table
+    toggle_lemontable: Lemon table
+    toggle_limechair: Lime chair
+    toggle_orangechair: Orange chair
+    toggle_daffodiltable: Daffodil table
+    toggle_daffodilchair: Daffodil chair
+    toggle_irischair: Iris chair
+    toggle_iristable: Iris table
+    toggle_tulipchair: Tulip chair
+    toggle_tuliptable: Tulip table
+    toggle_congadrum: Conga drum
+    toggle_djimbedrum: Djimbe drum
+    toggle_timpanodrum: Timpano drum
+    toggle_aikofigurine: Aiko figurine
+    toggle_emifigurine: Emi figurine
+    toggle_keikofigurine: Keiko figurine
+    toggle_makifigurine: Maki figurine
+    toggle_naomifigurine: Naomi figurine
+    toggle_yokofigurine: Yoko figurine
+    toggle_yukifigurine: Yuki figurine
+    toggle_froggychair: Froggy chair
+    toggle_lily-padtable: Lily-pad table
+    toggle_folkguitar: Folk guitar
+    toggle_countryguitar: Country guitar
+    toggle_rockguitar: Rock guitar
+    toggle_luigitrophy: Luigi trophy
+    toggle_mariotrophy: Mario trophy
+    toggle_melonchair: Melon chair
+    toggle_watermelonchair: Watermelon chair
+    toggle_watermelontable: Watermelon table
+    toggle_arwing: Arwing
+    toggle_glogo: G logo
+    toggle_mastersword: Master Sword
+    toggle_nlogo: N logo
+    toggle_officechair: Office chair
+    toggle_officedesk: Office desk
+    toggle_officelocker: Office locker
+    toggle_peardresser: Pear dresser
+    toggle_pearwardrobe: Pear wardrobe
+    toggle_pinechair: Pine chair
+    toggle_pinetable: Pine table
+    toggle_robo-clock: Robo-clock
+    toggle_robo-stereo: Robo-stereo
+    toggle_bass: Bass
+    toggle_cello: Cello
+    toggle_violin: Violin
+    toggle_bearpole: Bear pole
+    toggle_eaglepole: Eagle pole
+    toggle_frogwomanpole: Frog woman pole
+    toggle_ravenpole: Raven pole
+    toggle_bluevase: Blue vase
+    toggle_redvase: Red vase
+    toggle_teavase: Tea vase
+    toggle_candymachine: Candy machine
+    toggle_coffeemachine: Coffee machine
+    toggle_popmachine: Pop machine
+    toggle_sodamachine: Soda machine
+    toggle_globe: Globe
+    toggle_writingchair: Writing chair
+    toggle_writingdesk: Writing desk
+    toggle_barber&#39;spole: Barber&#39;s pole
+    toggle_birdcage: Birdcage
+    toggle_busstop: Bus stop
+    toggle_extinguisher: Extinguisher
+    toggle_fan: Fan
+    toggle_garbagecan: Garbage can
+    toggle_trashbin: Trash bin
+    toggle_teaset: Tea set
+    toggle_glass-toptable: Glass-top table
+    toggle_orangebox: Orange box
+    toggle_pineapplebed: Pineapple bed
+    toggle_potbellystove: Potbelly stove
+    toggle_radiator: Radiator
+    toggle_rockingchair: Rocking chair
+    toggle_scale: Scale
+    toggle_sewingmachine: Sewing machine
+    toggle_spaceheater: Space heater
+    toggle_refrigerator: Refrigerator
+    toggle_stove: Stove
+    toggle_mochipestle: Mochi pestle
+    toggle_biwalute: Biwa lute
+    toggle_taikodrum: Taiko drum
+    toggle_chesstable: Chess table
+    toggle_tabletennis: Table tennis
+    toggle_billiardtable: Billiard table
+    toggle_executivetoy: Executive toy
+    toggle_slotmachine: Slot machine
+    toggle_waterbird: Water bird
+    toggle_wobbelina: Wobbelina
+    toggle_computer: Computer
+    toggle_toilet: Toilet
+    toggle_supertoilet: Super toilet
+    toggle_daffodil: Daffodil
+    toggle_gerbera: Gerbera
+    toggle_sunflower: Sunflower
+    toggle_hinaningyo: Hinaningyo
+    toggle_samuraisuit: Samurai suit
+    toggle_tanabatapalm: Tanabata palm
+    toggle_elephantslide: Elephant slide
+    toggle_trainset: Train set
+    toggle_retrotv: Retro TV
+    toggle_wide-screentv: Wide-screen TV
+    toggle_bigfestivetree: Big festive tree
+    toggle_festivetree: Festive tree
+    toggle_festivecandle: Festive candle
+    toggle_festiveflag: Festive flag
+    toggle_metronome: Metronome
+    toggle_harp: Harp
+    toggle_vibraphone: Vibraphone
+    toggle_ebonypiano: Ebony piano
+    toggle_ivorypiano: Ivory piano
+    toggle_barrel: Barrel
+    toggle_keg: Keg
+    toggle_bluegolfbag: Blue golf bag
+    toggle_greengolfbag: Green golf bag
+    toggle_whitegolfbag: White golf bag
+    toggle_nook&#39;sportrait: Nook&#39;s portrait
+    toggle_creamsofa: Cream sofa
+    toggle_redsofa: Red sofa
+    toggle_redarmchair: Red armchair
+    toggle_goldecono-chair: Gold econo-chair
+    toggle_jadeecono-chair: Jade econo-chair
+    toggle_rubyecono-chair: Ruby econo-chair
+    toggle_alarmclock: Alarm clock
+    toggle_antiqueclock: Antique clock
+    toggle_cubeclock: Cube clock
+    toggle_glowclock: Glow clock
+    toggle_kitschyclock: Kitschy clock
+    toggle_oddclock: Odd clock
+    toggle_owlclock: Owl clock
+    toggle_redclock: Red clock
+    toggle_azaleabonsai: Azalea bonsai
+    toggle_hawthornbonsai: Hawthorn bonsai
+    toggle_hollybonsai: Holly bonsai
+    toggle_jasminebonsai: Jasmine bonsai
+    toggle_maplebonsai: Maple bonsai
+    toggle_quincebonsai: Quince bonsai
+    toggle_plumbonsai: Plum bonsai
+    toggle_aloe: Aloe
+    toggle_bromeliaceae: Bromeliaceae
+    toggle_caladium: Caladium
+    toggle_coconutpalm: Coconut palm
+    toggle_cornplant: Corn plant
+    toggle_croton: Croton
+    toggle_dracaena: Dracaena
+    toggle_fanpalm: Fan palm
+    toggle_ladypalm: Lady palm
+    toggle_pachira: Pachira
+    toggle_pothos: Pothos
+    toggle_rubbertree: Rubber tree
+    toggle_snakeplant: Snake plant
+    toggle_weepingfig: Weeping fig
+    toggle_tapedeck: Tape deck
+    toggle_redboombox: Red boom box
+    toggle_whiteboombox: White boom box
+    toggle_cdplayer: CD player
+    toggle_phonograph: Phonograph
+    toggle_jukebox: Jukebox
+    toggle_turntable: Turntable
+    toggle_retrostereo: Retro stereo
+    toggle_high-endstereo: High-end stereo
+    toggle_reel-to-reel: Reel-to-reel
+    toggle_goldstereo: Gold stereo
+    toggle_lovelystereo: Lovely stereo
+    toggle_dicestereo: Dice stereo
+    toggle_hi-fistereo: Hi-fi stereo
+    toggle_classicpainting: Classic painting
+    toggle_finepainting: Fine painting
+    toggle_perfectpainting: Perfect painting
+    toggle_rarepainting: Rare painting
+    toggle_strangepainting: Strange painting
+    toggle_worthypainting: Worthy painting
+    toggle_amazingpainting: Amazing painting
+    toggle_basicpainting: Basic painting
+    toggle_commonpainting: Common painting
+    toggle_daintypainting: Dainty painting
+    toggle_famouspainting: Famous painting
+    toggle_flowerypainting: Flowery painting
+    toggle_movingpainting: Moving painting
+    toggle_quaintpainting: Quaint painting
+    toggle_scarypainting: Scary painting
+    toggle_chowder: Chowder
+    toggle_crabstew: Crab stew
+    toggle_fireplace: Fireplace
+    toggle_sleigh: Sleigh
+    toggle_snowbunny: Snow bunny
+    toggle_snowboard: Snowboard
+    toggle_backpack: Backpack
+    toggle_bonfire: Bonfire
+    toggle_campfire: Campfire
+    toggle_cooler: Cooler
+    toggle_kayak: Kayak
+    toggle_lantern: Lantern
+    toggle_mountainbike: Mountain bike
+    toggle_propanestove: Propane stove
+    toggle_sleepingbag: Sleeping bag
+    toggle_beachchair: Beach chair
+    toggle_beachtable: Beach table
+    toggle_diverdan: Diver Dan
+    toggle_lifering: Life ring
+    toggle_snowconemachine: Snowcone machine
+    toggle_surfboard: Surfboard
+    toggle_treasurechest: Treasure chest
+    toggle_ukulele: Ukulele
+    toggle_wavebreaker: Wave breaker
+    toggle_arcdetriomphe: Arc De Triomphe
+    toggle_chineselion: Chinese lion
+    toggle_chineselioness: Chinese lioness
+    toggle_compass: Compass
+    toggle_fishingbear: Fishing bear
+    toggle_ladyliberty: Lady Liberty
+    toggle_manekinpis: Manekin Pis
+    toggle_matryoshka: Matryoshka
+    toggle_merlion: Merlion
+    toggle_mermaidstatue: Mermaid statue
+    toggle_moaistatue: Moai statue
+    toggle_mouthoftruth: Mouth of Truth
+    toggle_pagoda: Pagoda
+    toggle_platearmor: Plate armor
+    toggle_shogipiece: Shogi piece
+    toggle_stonecoin: Stone coin
+    toggle_tigerbobblehead: Tiger bobblehead
+    toggle_tokyotower: Tokyo Tower
+    toggle_towerofpisa: Tower of Pisa
+    toggle_tribalmask: Tribal mask
+    toggle_nintendobench: Nintendo bench
+    toggle_birthdaycake: Birthday cake
+    toggle_chocolates: Chocolates
+    toggle_tissue: Tissue
+    toggle_piggybank: Piggy bank
+    toggle_mailbox: Mailbox
+    toggle_telescope: Telescope
+    toggle_aerobicsradio: Aerobics radio
+    toggle_anglertrophy: Angler trophy
+    toggle_autumnmedal: Autumn medal
+    toggle_springmedal: Spring medal
+    toggle_bottlerocket: Bottle rocket
+    toggle_bottledship: Bottled ship
+    toggle_cornucopia: Cornucopia
+    toggle_dolly: Dolly
+    toggle_fishingtrophy: Fishing trophy
+    toggle_lovelyphone: Lovely phone
+    toggle_moon: Moon
+    toggle_noisemaker: Noisemaker
+    toggle_balloonfight: Balloon Fight
+    toggle_baseball: Baseball
+    toggle_clucluland: Clu Clu Land
+    toggle_cluclulandd: Clu Clu Land D
+    toggle_dkjrmath: DK Jr MATH
+    toggle_donkeykong: Donkey Kong
+    toggle_donkeykong3: Donkey Kong 3
+    toggle_donkeykongjr: Donkey Kong Jr
+    toggle_excitebike: Excitebike
+    toggle_golf: Golf
+    toggle_pinball: Pinball
+    toggle_punchout: Punchout
+    toggle_soccer: Soccer
+    toggle_tennis: Tennis
+    toggle_wario&#39;swoods: Wario&#39;s Woods
+    toggle_nes: NES
+    toggle_supertortimer: Super Tortimer
+    toggle_cosmosmodel1: Cosmos model 1
+    toggle_cosmosmodel2: Cosmos model 2
+    toggle_cosmosmodel3: Cosmos model 3
+    toggle_pansymodel1: Pansy model 1
+    toggle_pansymodel2: Pansy model 2
+    toggle_pansymodel3: Pansy model 3
+    toggle_tulipmodel1: Tulip model 1
+    toggle_tulipmodel2: Tulip model 2
+    toggle_tulipmodel3: Tulip model 3
+    toggle_dirtmodel: Dirt model
+    toggle_grassmodel: Grass model
+    toggle_weedmodel: Weed model
+    toggle_pinktreemodel: Pink tree model
+    toggle_treemodel: Tree model
+    toggle_snowytreemodel: Snowy tree model
+    toggle_igloomodel: Igloo model
+    toggle_snowman: Snowman
+    toggle_tentmodel: Tent model
+    toggle_trackmodel: Track model
+    toggle_locomotivemodel: Locomotive model
+    toggle_traincarmodel: Train car model
+    toggle_miniaturecar: Miniature car
+    toggle_dumpmodel: Dump model
+    toggle_wellmodel: Well model
+    toggle_katrina&#39;stent: Katrina&#39;s tent
+    toggle_marketmodel: Market model
+    toggle_policemodel: Police model
+    toggle_shopmodel: Shop model
+    toggle_postmodel: Post model
+    toggle_tailormodel: Tailor model
+    toggle_lighthousemodel: Lighthouse model
+    toggle_housemodel: House model
+    toggle_manormodel: Manor model
+    toggle_museummodel: Museum model
+    toggle_stationmodel1: Station model 1
+    toggle_stationmodel2: Station model 2
+    toggle_stationmodel3: Station model 3
+    toggle_stationmodel4: Station model 4
+    toggle_stationmodel5: Station model 5
+    toggle_stationmodel6: Station model 6
+    toggle_stationmodel7: Station model 7
+    toggle_stationmodel8: Station model 8
+    toggle_stationmodel9: Station model 9
+    toggle_stationmodel10: Station model 10
+    toggle_stationmodel11: Station model 11
+    toggle_stationmodel12: Station model 12
+    toggle_stationmodel13: Station model 13
+    toggle_stationmodel14: Station model 14
+    toggle_stationmodel15: Station model 15
+    toggle_bluediary: Blue diary
+    toggle_bluepolkapad: Blue polka pad
+    toggle_calligraphypad: Calligraphy pad
+    toggle_captain&#39;slog: Captain&#39;s log
+    toggle_collegerule: College rule
+    toggle_diary: Diary
+    toggle_frenchnotebook: French notebook
+    toggle_greenplaidpad: Green plaid pad
+    toggle_journal: Journal
+    toggle_organizer: Organizer
+    toggle_pinkdiary: Pink diary
+    toggle_pinkplaidpad: Pink plaid pad
+    toggle_redpolkapad: Red polka pad
+    toggle_schoolpad: School pad
+    toggle_scroll: Scroll
+    toggle_yellowplaidpad: Yellow plaid pad
+  Wallpapers:
+    toggle_chicwall: Chic wall
+    toggle_classicwall: Classic wall
+    toggle_parlorwall: Parlor wall
+    toggle_stonewall: Stone wall
+    toggle_blue-trimwall: Blue-trim wall
+    toggle_plasterwall: Plaster wall
+    toggle_classroomwall: Classroom wall
+    toggle_lovelywall: Lovely wall
+    toggle_exoticwall: Exotic wall
+    toggle_mortarwall: Mortar wall
+    toggle_goldscreenwall: Gold screen wall
+    toggle_tearoomwall: Tea room wall
+    toggle_citruswall: Citrus wall
+    toggle_cabinwall: Cabin wall
+    toggle_bluetarp: Blue tarp
+    toggle_lunarhorizon: Lunar horizon
+    toggle_gardenwall: Garden wall
+    toggle_spookywall: Spooky wall
+    toggle_westernvista: Western vista
+    toggle_greenwall: Green wall
+    toggle_bluewall: Blue wall
+    toggle_regalwall: Regal wall
+    toggle_ranchwall: Ranch wall
+    toggle_modernwall: Modern wall
+    toggle_cabanawall: Cabana wall
+    toggle_snowmanwall: Snowman wall
+    toggle_backyardfence: Backyard fence
+    toggle_musicroomwall: Music room wall
+    toggle_plazawall: Plaza wall
+    toggle_latticewall: Lattice wall
+    toggle_ornatewall: Ornate wall
+    toggle_modernscreen: Modern screen
+    toggle_bamboowall: Bamboo wall
+    toggle_kitchenwall: Kitchen wall
+    toggle_oldbrickwall: Old brick wall
+    toggle_statelywall: Stately wall
+    toggle_imperialwall: Imperial wall
+    toggle_manorwall: Manor wall
+    toggle_ivywall: Ivy wall
+    toggle_modwall: Mod wall
+    toggle_rosewall: Rose wall
+    toggle_woodpaneling: Wood paneling
+    toggle_concretewall: Concrete wall
+    toggle_officewall: Office wall
+    toggle_ancientwall: Ancient wall
+    toggle_exquisitewall: Exquisite wall
+    toggle_sandlotwall: Sandlot wall
+    toggle_jinglewall: Jingle wall
+    toggle_meadowvista: Meadow vista
+    toggle_tree-linedwall: Tree-lined wall
+    toggle_mosaicwall: Mosaic wall
+    toggle_archedwindow: Arched window
+    toggle_basementwall: Basement wall
+    toggle_backgammonwall: Backgammon wall
+    toggle_kiddiewall: Kiddie wall
+    toggle_shantywall: Shanty wall
+    toggle_industrialwall: Industrial wall
+    toggle_desertvista: Desert vista
+    toggle_librarywall: Library wall
+    toggle_floralwall: Floral wall
+    toggle_tropicalvista: Tropical vista
+    toggle_playroomwall: Playroom wall
+    toggle_kitschywall: Kitschy wall
+    toggle_groovywall: Groovy wall
+    toggle_mushroommural: Mushroom mural
+    toggle_ringsideseating: Ringside seating
+    toggle_harvestwall: Harvest wall
+  Flooring:
+    toggle_plushcarpet: Plush carpet
+    toggle_classiccarpet: Classic carpet
+    toggle_checkeredtile: Checkered tile
+    toggle_oldflooring: Old flooring
+    toggle_redtile: Red tile
+    toggle_birchflooring: Birch flooring
+    toggle_classroomfloor: Classroom floor
+    toggle_lovelycarpet: Lovely carpet
+    toggle_exoticrug: Exotic rug
+    toggle_mossycarpet: Mossy carpet
+    toggle_18mattatami: 18 mat tatami
+    toggle_8mattatami: 8 mat tatami
+    toggle_citruscarpet: Citrus carpet
+    toggle_cabinrug: Cabin rug
+    toggle_closedroad: Closed road
+    toggle_lunarsurface: Lunar surface
+    toggle_sandgarden: Sand garden
+    toggle_spookycarpet: Spooky carpet
+    toggle_westerndesert: Western desert
+    toggle_greenrug: Green rug
+    toggle_blueflooring: Blue flooring
+    toggle_regalcarpet: Regal carpet
+    toggle_ranchflooring: Ranch flooring
+    toggle_moderntile: Modern tile
+    toggle_cabanaflooring: Cabana flooring
+    toggle_snowmancarpet: Snowman carpet
+    toggle_backyardlawn: Backyard lawn
+    toggle_musicroomfloor: Music room floor
+    toggle_plazatile: Plaza tile
+    toggle_kitchentile: Kitchen tile
+    toggle_ornaterug: Ornate rug
+    toggle_tatamifloor: Tatami floor
+    toggle_bambooflooring: Bamboo flooring
+    toggle_kitchenflooring: Kitchen flooring
+    toggle_charcoaltile: Charcoal tile
+    toggle_stonetile: Stone tile
+    toggle_imperialtile: Imperial tile
+    toggle_opulentrug: Opulent rug
+    toggle_slateflooring: Slate flooring
+    toggle_ceramictile: Ceramic tile
+    toggle_fancycarpet: Fancy carpet
+    toggle_cowhiderug: Cowhide rug
+    toggle_steelflooring: Steel flooring
+    toggle_officeflooring: Office flooring
+    toggle_ancienttile: Ancient tile
+    toggle_exquisiterug: Exquisite rug
+    toggle_sandlot: Sandlot
+    toggle_jinglecarpet: Jingle carpet
+    toggle_daisymeadow: Daisy meadow
+    toggle_sidewalk: Sidewalk
+    toggle_mosaictile: Mosaic tile
+    toggle_parquetfloor: Parquet floor
+    toggle_basementfloor: Basement floor
+    toggle_chessboardrug: Chessboard rug
+    toggle_kiddiecarpet: Kiddie carpet
+    toggle_shantymat: Shanty mat
+    toggle_concretefloor: Concrete floor
+    toggle_saharah&#39;sdesert: Saharah&#39;s desert
+    toggle_tartanrug: Tartan rug
+    toggle_palacetile: Palace tile
+    toggle_tropicalfloor: Tropical floor
+    toggle_playroomrug: Playroom rug
+    toggle_kitschytile: Kitschy tile
+    toggle_dinertile: Diner tile
+    toggle_blockflooring: Block flooring
+    toggle_boxingringmat: Boxing ring mat
+    toggle_harvestrug: Harvest rug
+    toggle_bathhousetilefloor: Bathhouse tile floor
+    toggle_oldboardfloor: Old board floor
+  Clothing & Umbrellas:
+    toggle_ashirt: A shirt
+    toggle_airyshirt: Airy shirt
+    toggle_ancientknit: Ancient knit
+    toggle_anju&#39;sshirt: Anju&#39;s shirt
+    toggle_arcticcamo: Arctic camo
+    toggle_argyleknit: Argyle knit
+    toggle_auroraknit: Aurora knit
+    toggle_badplaidshirt: Bad plaid shirt
+    toggle_barbershirt: Barber shirt
+    toggle_bbshirt: BB shirt
+    toggle_bearshirt: Bear shirt
+    toggle_beatnikshirt: Beatnik shirt
+    toggle_berrygingham: Berry gingham
+    toggle_bigbro&#39;sshirt: Big bro&#39;s shirt
+    toggle_bigdotshirt: Big dot shirt
+    toggle_bigstarshirt: Big star shirt
+    toggle_blossomshirt: Blossom shirt
+    toggle_blossomingshirt: Blossoming shirt
+    toggle_bluealohashirt: Blue aloha shirt
+    toggle_bluecheckprint: Blue check print
+    toggle_bluecheckshirt: Blue check shirt
+    toggle_bluegridshirt: Blue grid shirt
+    toggle_bluepinstripe: Blue pinstripe
+    toggle_bluescaleshirt: Blue scale shirt
+    toggle_bluestripeknit: Blue stripe knit
+    toggle_bluetartan: Blue tartan
+    toggle_bluetie-dye: Blue tie-dye
+    toggle_boldcheckshirt: Bold check shirt
+    toggle_botanicalshirt: Botanical shirt
+    toggle_bubbleshirt: Bubble shirt
+    toggle_butterflyshirt: Butterfly shirt
+    toggle_caféshirt: Café shirt
+    toggle_caterpillartee: Caterpillar tee
+    toggle_cavemantunic: Caveman tunic
+    toggle_chain-gangshirt: Chain-gang shirt
+    toggle_checkerboardtee: Checkerboard tee
+    toggle_checkeredshirt: Checkered shirt
+    toggle_cherryshirt: Cherry shirt
+    toggle_chevronshirt: Chevron shirt
+    toggle_chichiprint: Chichi print
+    toggle_circusshirt: Circus shirt
+    toggle_citrusgingham: Citrus gingham
+    toggle_citrusshirt: Citrus shirt
+    toggle_classictop: Classic top
+    toggle_cloudyshirt: Cloudy shirt
+    toggle_clubshirt: Club shirt
+    toggle_comfysweater: Comfy sweater
+    toggle_conciergeshirt: Concierge shirt
+    toggle_coolshirt: Cool shirt
+    toggle_coralshirt: Coral shirt
+    toggle_cowprint: Cow print
+    toggle_cozysweater: Cozy sweater
+    toggle_crewelshirt: Crewel shirt
+    toggle_crossingshirt: Crossing shirt
+    toggle_daisyshirt: Daisy shirt
+    toggle_dangershirt: Danger shirt
+    toggle_dappershirt: Dapper shirt
+    toggle_darkpolkashirt: Dark polka shirt
+    toggle_dawnshirt: Dawn shirt
+    toggle_dazedshirt: Dazed shirt
+    toggle_deepbluetee: Deep blue tee
+    toggle_deershirt: Deer shirt
+    toggle_denimshirt: Denim shirt
+    toggle_desertcamo: Desert camo
+    toggle_desertshirt: Desert shirt
+    toggle_diamondshirt: Diamond shirt
+    toggle_diceshirt: Dice shirt
+    toggle_dineruniform: Diner uniform
+    toggle_dragonsuit: Dragon suit
+    toggle_dreamyshirt: Dreamy shirt
+    toggle_earthyknit: Earthy knit
+    toggle_eight-ballshirt: Eight-ball shirt
+    toggle_exoticshirt: Exotic shirt
+    toggle_fallplaidshirt: Fall plaid shirt
+    toggle_far-outshirt: Far-out shirt
+    toggle_fetchingoutfit: Fetching outfit
+    toggle_fiendishshirt: Fiendish shirt
+    toggle_fishboneshirt: Fish bone shirt
+    toggle_fishknit: Fish knit
+    toggle_five-ballshirt: Five-ball shirt
+    toggle_flameshirt: Flame shirt
+    toggle_flickershirt: Flicker shirt
+    toggle_floralknit: Floral knit
+    toggle_floweryshirt: Flowery shirt
+    toggle_folkshirt: Folk shirt
+    toggle_fortuneshirt: Fortune shirt
+    toggle_four-ballshirt: Four-ball shirt
+    toggle_freshshirt: Fresh shirt
+    toggle_frogshirt: Frog shirt
+    toggle_funkydotshirt: Funky dot shirt
+    toggle_futureshirt: Future shirt
+    toggle_glogoshirt: G logo shirt
+    toggle_gaudysweater: Gaudy sweater
+    toggle_gelatoshirt: Gelato shirt
+    toggle_giraffeprint: Giraffe print
+    toggle_go-goshirt: Go-go shirt
+    toggle_gracie&#39;stop: Gracie&#39;s top
+    toggle_grapeshirt: Grape shirt
+    toggle_grassshirt: Grass shirt
+    toggle_graytartan: Gray tartan
+    toggle_greenbarshirt: Green bar shirt
+    toggle_greenringshirt: Green ring shirt
+    toggle_greentie-dye: Green tie-dye
+    toggle_groovyshirt: Groovy shirt
+    toggle_gumdropshirt: Gumdrop shirt
+    toggle_heartshirt: Heart shirt
+    toggle_hippieshirt: Hippie shirt
+    toggle_hotspringshirt: Hot spring shirt
+    toggle_houndstoothknit: Houndstooth knit
+    toggle_houndstoothtee: Houndstooth tee
+    toggle_icyshirt: Icy shirt
+    toggle_jadecheckprint: Jade check print
+    toggle_jaggedshirt: Jagged shirt
+    toggle_jestershirt: Jester shirt
+    toggle_jingleshirt: Jingle shirt
+    toggle_junglecamo: Jungle camo
+    toggle_kaffe&#39;sshirt: Kaffe&#39;s shirt
+    toggle_kiddieshirt: Kiddie shirt
+    toggle_kiwishirt: Kiwi shirt
+    toggle_lacedshirt: Laced shirt
+    toggle_ladybugshirt: Ladybug shirt
+    toggle_lavenderrobe: Lavender robe
+    toggle_leatherjerkin: Leather jerkin
+    toggle_lemongingham: Lemon gingham
+    toggle_leopardprint: Leopard print
+    toggle_li&#39;lbro&#39;sshirt: Li&#39;l bro&#39;s shirt
+    toggle_lightlineshirt: Light line shirt
+    toggle_limelineshirt: Lime line shirt
+    toggle_litepolkashirt: Lite polka shirt
+    toggle_loudbloomshirt: Loud bloom shirt
+    toggle_loudlineshirt: Loud line shirt
+    toggle_lovelyshirt: Lovely shirt
+    toggle_melongingham: Melon gingham
+    toggle_melonshirt: Melon shirt
+    toggle_mintgingham: Mint gingham
+    toggle_mistyshirt: Misty shirt
+    toggle_modtop: Mod top
+    toggle_moldyshirt: Moldy shirt
+    toggle_monkeyshirt: Monkey shirt
+    toggle_moodyblueshirt: Moody blue shirt
+    toggle_mosaicshirt: Mosaic shirt
+    toggle_mvpshirt: MVP shirt
+    toggle_nattyshirt: Natty shirt
+    toggle_nebulashirt: Nebula shirt
+    toggle_neo-classicknit: Neo-classic knit
+    toggle_newspringshirt: New spring shirt
+    toggle_nine-ballshirt: Nine-ball shirt
+    toggle_no.1shirt: No.1 shirt
+    toggle_no.2shirt: No.2 shirt
+    toggle_no.23shirt: No.23 shirt
+    toggle_no.3shirt: No.3 shirt
+    toggle_no.4shirt: No.4 shirt
+    toggle_no.5shirt: No.5 shirt
+    toggle_no.67shirt: No.67 shirt
+    toggle_nobleshirt: Noble shirt
+    toggle_noodleshirt: Noodle shirt
+    toggle_oft-seenprint: Oft-seen print
+    toggle_one-ballshirt: One-ball shirt
+    toggle_opticalshirt: Optical shirt
+    toggle_orangepinstripe: Orange pinstripe
+    toggle_orangetie-dye: Orange tie-dye
+    toggle_painter&#39;ssmock: Painter&#39;s smock
+    toggle_patchedshirt: Patched shirt
+    toggle_patchworktop: Patchwork top
+    toggle_pawshirt: Paw shirt
+    toggle_peachyshirt: Peachy shirt
+    toggle_pinktartan: Pink tartan
+    toggle_polarfleece: Polar fleece
+    toggle_popbloomshirt: Pop bloom shirt
+    toggle_prismshirt: Prism shirt
+    toggle_pulseshirt: Pulse shirt
+    toggle_purpletie-dye: Purple tie-dye
+    toggle_puzzlingshirt: Puzzling shirt
+    toggle_racer6shirt: Racer 6 shirt
+    toggle_racershirt: Racer shirt
+    toggle_rainbowshirt: Rainbow shirt
+    toggle_rallyshirt: Rally shirt
+    toggle_redalohashirt: Red aloha shirt
+    toggle_redbarshirt: Red bar shirt
+    toggle_redcheckshirt: Red check shirt
+    toggle_redgridshirt: Red grid shirt
+    toggle_redscaleshirt: Red scale shirt
+    toggle_redtie-dye: Red tie-dye
+    toggle_ribbonshirt: Ribbon shirt
+    toggle_rickrackshirt: Rickrack shirt
+    toggle_roseshirt: Rose shirt
+    toggle_rugbyshirt: Rugby shirt
+    toggle_seven-ballshirt: Seven-ball shirt
+    toggle_sharpoutfit: Sharp outfit
+    toggle_sherbetgingham: Sherbet gingham
+    toggle_shirtcircuit: Shirt circuit
+    toggle_shortcakeshirt: Shortcake shirt
+    toggle_silkbloomshirt: Silk bloom shirt
+    toggle_six-ballshirt: Six-ball shirt
+    toggle_skisweater: Ski sweater
+    toggle_skullshirt: Skull shirt
+    toggle_snappyprint: Snappy print
+    toggle_snowshirt: Snow shirt
+    toggle_snowconeshirt: Snowcone shirt
+    toggle_spadeshirt: Spade shirt
+    toggle_speedwayshirt: Speedway shirt
+    toggle_spiderwebshirt: Spiderweb shirt
+    toggle_splendidshirt: Splendid shirt
+    toggle_springshirt: Spring shirt
+    toggle_spunkyknit: Spunky knit
+    toggle_starshirt: Star shirt
+    toggle_staticshirt: Static shirt
+    toggle_stormyshirt: Stormy shirt
+    toggle_strawshirt: Straw shirt
+    toggle_strawberryshirt: Strawberry shirt
+    toggle_strikingoutfit: Striking outfit
+    toggle_subduedprint: Subdued print
+    toggle_sunsettop: Sunset top
+    toggle_swellshirt: Swell shirt
+    toggle_three-ballshirt: Three-ball shirt
+    toggle_thundershirt: Thunder shirt
+    toggle_tigerprint: Tiger print
+    toggle_tikishirt: Tiki shirt
+    toggle_tinshirt: Tin shirt
+    toggle_toadprint: Toad print
+    toggle_trendytop: Trendy top
+    toggle_tropicalshirt: Tropical shirt
+    toggle_turniptop: Turnip top
+    toggle_twinkleshirt: Twinkle shirt
+    toggle_two-ballshirt: Two-ball shirt
+    toggle_urhereshirt: U R here shirt
+    toggle_uglyshirt: Ugly shirt
+    toggle_uncommonshirt: Uncommon shirt
+    toggle_vertigoshirt: Vertigo shirt
+    toggle_voguetop: Vogue top
+    toggle_waffleshirt: Waffle shirt
+    toggle_watermelonshirt: Watermelon shirt
+    toggle_waveprint: Wave print
+    toggle_wavypinkshirt: Wavy pink shirt
+    toggle_wavytanshirt: Wavy tan shirt
+    toggle_whirlyshirt: Whirly shirt
+    toggle_whiteringshirt: White ring shirt
+    toggle_windsockshirt: Windsock shirt
+    toggle_wintersweater: Winter sweater
+    toggle_workuniform: Work uniform
+    toggle_yellowbarshirt: Yellow bar shirt
+    toggle_yellowbolero: Yellow bolero
+    toggle_yellowpinstripe: Yellow pinstripe
+    toggle_yellowtartan: Yellow tartan
+    toggle_yodelshirt: Yodel shirt
+    toggle_zebraprint: Zebra print
+    toggle_zippershirt: Zipper shirt
+    toggle_batbrella: Batbrella
+    toggle_berryumbrella: Berry umbrella
+    toggle_blueumbrella: Blue umbrella
+    toggle_bumbershoot: Bumbershoot
+    toggle_checkedumbrella: Checked umbrella
+    toggle_classicumbrella: Classic umbrella
+    toggle_daffodilparasol: Daffodil parasol
+    toggle_daintyparasol: Dainty parasol
+    toggle_elegantumbrella: Elegant umbrella
+    toggle_flameumbrella: Flame umbrella
+    toggle_gelatoumbrella: Gelato umbrella
+    toggle_ginghamparasol: Gingham parasol
+    toggle_hypnoparasol: Hypno parasol
+    toggle_icyumbrella: Icy umbrella
+    toggle_lacyparasol: Lacy parasol
+    toggle_leafumbrella: Leaf umbrella
+    toggle_lotusparasol: Lotus parasol
+    toggle_modumbrella: Mod umbrella
+    toggle_nintendoparasol: Nintendo parasol
+    toggle_noodleparasol: Noodle parasol
+    toggle_orangeumbrella: Orange umbrella
+    toggle_paperparasol: Paper parasol
+    toggle_pastelparasol: Pastel parasol
+    toggle_petalparasol: Petal parasol
+    toggle_plaidparasol: Plaid parasol
+    toggle_polkaparasol: Polka parasol
+    toggle_retroumbrella: Retro umbrella
+    toggle_ribbonparasol: Ribbon parasol
+    toggle_sharpumbrella: Sharp umbrella
+    toggle_sunnyparasol: Sunny parasol
+    toggle_twigparasol: Twig parasol
+    toggle_yellowumbrella: Yellow umbrella
+    toggle_tailorsticket: Tailors ticket
+  Tools:
+    toggle_bluebellfan: Bluebell fan
+    toggle_plumfan: Plum fan
+    toggle_flowerfan: Flower fan
+    toggle_bamboofan: Bamboo fan
+    toggle_cloudfan: Cloud fan
+    toggle_maplefan: Maple fan
+    toggle_fanfan: Fan fan
+    toggle_leaffan: Leaf fan
+    toggle_yellowpinwheel: Yellow pinwheel
+    toggle_redpinwheel: Red pinwheel
+    toggle_tigerpinwheel: Tiger pinwheel
+    toggle_greenpinwheel: Green pinwheel
+    toggle_pinkpinwheel: Pink pinwheel
+    toggle_stripedpinwheel: Striped pinwheel
+    toggle_flowerpinwheel: Flower pinwheel
+    toggle_fancypinwheel: Fancy pinwheel
+    toggle_redballoon: Red balloon
+    toggle_yellowballoon: Yellow balloon
+    toggle_blueballoon: Blue balloon
+    toggle_greenballoon: Green balloon
+    toggle_purpleballoon: Purple balloon
+    toggle_bunnyp.balloon: Bunny P. balloon
+    toggle_bunnyb.balloon: Bunny B. balloon
+    toggle_bunnyo.balloon: Bunny O. balloon
+    toggle_goldennet: Golden net
+    toggle_goldenaxe: Golden axe
+    toggle_goldenshovel: Golden shovel
+    toggle_goldenrod: Golden rod
+    toggle_net: Net
+    toggle_axe: Axe
+    toggle_shovel: Shovel
+    toggle_fishingrod: Fishing rod
+  Stationary:
+    toggle_airmailpaper: Airmail paper
+    toggle_sparklypaper: Sparkly paper
+    toggle_bamboopaper: Bamboo paper
+    toggle_orangepaper: Orange paper
+    toggle_essaypaper: Essay paper
+    toggle_pandapaper: Panda paper
+    toggle_ranchpaper: Ranch paper
+    toggle_steelpaper: Steel paper
+    toggle_blossompaper: Blossom paper
+    toggle_vinepaper: Vine paper
+    toggle_cloudypaper: Cloudy paper
+    toggle_petalpaper: Petal paper
+    toggle_snowypaper: Snowy paper
+    toggle_rainydaypaper: Rainy day paper
+    toggle_watermelonpaper: Watermelon paper
+    toggle_deepseapaper: Deep sea paper
+    toggle_starryskypaper: Starry sky paper
+    toggle_daisypaper: Daisy paper
+    toggle_bluebellpaper: Bluebell paper
+    toggle_mapleleafpaper: Maple leaf paper
+    toggle_woodcutpaper: Woodcut paper
+    toggle_octopuspaper: Octopus paper
+    toggle_festivepaper: Festive paper
+    toggle_skylinepaper: Skyline paper
+    toggle_museumpaper: Museum paper
+    toggle_fortunepaper: Fortune paper
+    toggle_stageshowpaper: Stageshow paper
+    toggle_thickpaper: Thick paper
+    toggle_spookypaper: Spooky paper
+    toggle_noodlepaper: Noodle paper
+    toggle_neatpaper: Neat paper
+    toggle_horsetailpaper: Horsetail paper
+    toggle_feltpaper: Felt paper
+    toggle_parchment: Parchment
+    toggle_coolpaper: Cool paper
+    toggle_elegantpaper: Elegant paper
+    toggle_lacypaper: Lacy paper
+    toggle_polka-dotpaper: Polka-dot paper
+    toggle_dizzypaper: Dizzy paper
+    toggle_rainbowpaper: Rainbow paper
+    toggle_hotneonpaper: Hot neon paper
+    toggle_coolneonpaper: Cool neon paper
+    toggle_alohapaper: Aloha paper
+    toggle_ribbonpaper: Ribbon paper
+    toggle_fantasypaper: Fantasy paper
+    toggle_woodlandpaper: Woodland paper
+    toggle_gingkopaper: Gingko paper
+    toggle_fireworkspaper: Fireworks paper
+    toggle_winterpaper: Winter paper
+    toggle_gyroidpaper: Gyroid paper
+    toggle_ivypaper: Ivy paper
+    toggle_wingpaper: Wing paper
+    toggle_dragonpaper: Dragon paper
+    toggle_tilepaper: Tile paper
+    toggle_mistypaper: Misty paper
+    toggle_simplepaper: Simple paper
+    toggle_honeybeepaper: Honeybee paper
+    toggle_mysticpaper: Mystic paper
+    toggle_sunsetpaper: Sunset paper
+    toggle_latticepaper: Lattice paper
+    toggle_daintypaper: Dainty paper
+    toggle_butterflypaper: Butterfly paper
+    toggle_newyear&#39;scard: New year&#39;s card
+    toggle_inkypaper: Inky paper
+  Fossils:
+    toggle_triceraskull: Tricera skull
+    toggle_triceratorso: Tricera torso
+    toggle_triceratail: Tricera tail
+    toggle_trexskull: T-rex skull
+    toggle_trextorso: T-rex torso
+    toggle_trextail: T-rex tail
+    toggle_apatoskull: Apato skull
+    toggle_apatotorso: Apato torso
+    toggle_apatotail: Apato tail
+    toggle_stegoskull: Stego skull
+    toggle_stegotorso: Stego torso
+    toggle_stegotail: Stego tail
+    toggle_pteraskull: Ptera skull
+    toggle_pteraleftwing: Ptera left wing
+    toggle_pterarightwing: Ptera right wing
+    toggle_plesioskull: Plesio skull
+    toggle_plesioneck: Plesio neck
+    toggle_plesiotorso: Plesio torso
+    toggle_mammothskull: Mammoth skull
+    toggle_mammothtorso: Mammoth torso
+    toggle_amber: Amber
+    toggle_dinosaurtrack: Dinosaur track
+    toggle_ammonite: Ammonite
+    toggle_dinosauregg: Dinosaur egg
+    toggle_trilobite:  Trilobite
+  Songs:
+    toggle_chorale: K.K. Chorale
+    toggle_march: K.K. March
+    toggle_waltz: K.K. Waltz
+    toggle_swing: K.K. Swing
+    toggle_jazz: K.K. Jazz
+    toggle_fusion: K.K. Fusion
+    toggle_etude: K.K. Etude
+    toggle_lullaby: K.K. Lullaby
+    toggle_aria: K.K. Aria
+    toggle_samba: K.K. Samba
+    toggle_bossa: K.K. Bossa
+    toggle_calypso: K.K. Calypso
+    toggle_salsa: K.K. Salsa
+    toggle_mambo: K.K. Mambo
+    toggle_reggae: K.K. Reggae
+    toggle_ska: K.K. Ska
+    toggle_tango: K.K. Tango
+    toggle_faire: K.K. Faire
+    toggle_aloha: Aloha K.K. 
+    toggle_lucky: Lucky K.K.
+    toggle_condor: K.K. Condor
+    toggle_steppe: K.K. Steppe
+    toggle_imperial: Imperial K.K. 
+    toggle_casbah: K.K. Casbah
+    toggle_safari: K.K. Safari
+    toggle_folk: K.K. Folk
+    toggle_rock: K.K. Rock
+    toggle_rockin: Rockin' K.K. 
+    toggle_ragtime: K.K. Ragtime
+    toggle_gumbo: K.K. Gumbo
+    toggle_funk: The K. Funk
+    toggle_blues: K.K. Blues
+    toggle_soulful: Soulful K.K. 
+    toggle_soul: K.K. Soul
+    toggle_cruisin: K.K. Cruisin'
+    toggle_lovesong: K.K. Love Song
+    toggle_d&b: K.K. D&B
+    toggle_technopop: K.K. Technopop
+    toggle_dj: DJ K.K. 
+    toggle_onlyme: Only Me K.K. 
+    toggle_country: K.K. Country
+    toggle_surfin: Surfin' K.K. 
+    toggle_ballad: K.K. Ballad
+    toggle_comrade: Comrade K.K. 
+    toggle_lament: K.K. Lament
+    toggle_gorider: Go K.K. Rider
+    toggle_dirge: K.K. Dirge
+    toggle_western: K.K. Western
+    toggle_mr: Mr. K.K. 
+    toggle_cafe: Cafe K.K. 
+    toggle_parade: K.K. Parade
+    toggle_mariachi: K.K. Mariachi
+    toggle_song: K.K. Song
+    toggle_iloveyou: I Love You
+    toggle_twodaysago: Two Days Ago
+    toggle_myplace: My Place
+    toggle_forestlife: Forest Life
+    toggle_totheedge: To The Edge
+    #Bugs:
+    #Fish:
+
+
+
+
