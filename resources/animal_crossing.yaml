@@ -136,75 +136,172 @@ content:
     toggle_tallquazoid: Tall quazoid
     toggle_slimquazoid: Slim quazoid
   Blue Series:
-    purchase_bluebed: Blue bed
+    purchase_bluebed:
+      name: Blue bed
       cost: 2100
       owner: Redd
-    purchase_bluebench: Blue bence
+    purchase_bluebench:
+      name: Blue bence
       cost: 1900
       owner: Tom Nook
-    purchase_bluebookcase: 
+    purchase_bluebookcase:
+      name: Blue bookcase
       cost: 1900
       owner: Tom Nook
-    purchase_bluebureau: 
+    purchase_bluebureau:
+      name: Blue bureau
       cost: 2160
       owner: Tom Nook
-    purchase_bluecabinet: 
+    purchase_bluecabinet:
+      name: Blue cabinet
       cost: 2400
       owner: Tom Nook
-    purchase_bluechair: 
+    purchase_bluechair:
+      name: Blue chair
       cost: 1900
       owner: Tom Nook
-    purchase_blueclock: 
+    purchase_blueclock:
+      name: Blue clock
       cost: 1600
       owner: Tom Nook
-    purchase_bluedresser: 
+    purchase_bluedresser:
+      name: Blue dresser
       cost: 2100
       owner: Tom Nook
-    purchase_bluetable: 
+    purchase_bluetable:
+      name: Blue table
       cost: 1800
       owner: Redd 
-    purchase_bluewardrobe: 
+    purchase_bluewardrobe:
+      name: Blue wardrobe
       cost: 1920
       owner: Tom Nook
-    purchase_bluewall: 
+    purchase_bluewall:
+      name: Blue wall
       cost: 1260
       owner: Tom Nook
-    purchase_blueflooring: 
+    purchase_blueflooring:
+      name: Blue flooring
       cost: 1580
       owner: Tom Nook
-  Furniture:
+  Cabana Series:
+    purchase_cabanaarmchair:
+      name: Cabana armchair
+      cost: 1800
+      owner: Nook Raffle
+    purchase_cabanabed:
+      name: Cabana bed
+      cost: 2200
+      owner: Redd
+    purchase_cabanabookcase:
+      name: Cabana bookcase
+      cost: 2400
+      owner: Tom Nook
+    purchase_cabanachair:
+      name: Cabana chair
+      cost: 1600
+      owner: Redd
+    purchase_cabanadresser:
+      name: Cabana dresser
+      cost: 2400
+      owner: Tom Nook
+    purchase_cabanalamp:
+      name: Cabana lamp
+      cost: 1700
+      owner: Tom Nook
+    purchase_cabanascreen:
+      name: Cabana screen
+      cost: 2000
+      owner: Tom Nook
+    purchase_cabanatable:
+      name: Cabana table
+      cost: 1800
+      owner: Tom Nook
+    purchase_cabanavanity:
+      name: Cabana vanity
+      cost: 1800
+      owner: Tom Nook
+    purchase_cabanawardrobe:
+      name: Cabana wardrobe
+      cost: 2240
+      owner: Tom Nook
+    purchase_cabanawall:
+      name: Cabana wall
+      cost: 1480
+      owner: Tom Nook
+    purchase_cabanaflooring:
+      name: Cabana flooring
+      cost: 1680
+      owner: Tom Nook 
+  Cabin Series:
+    purchase_cabinarmchair:
+      name: Cabin armchair
+      cost: 2280
+      owner: Timmy & Tommy
+    purchase_cabinbed:
+      name: Cabin bed
+      cost: 2400
+      owner: Timmy & Tommy 
+    purchase_cabinbookcase:
+      name: Cabin bookcase
+      cost: 2300
+      owner: Timmy & Tommy 
+    purchase_cabinchair:
+      name: Cabin chair
+      cost: 1700
+      owner: Timmy & Tommy 
+    purchase_cabinclock:
+      name: Cabin clock
+      cost: 2000
+      owner: Timmy & Tommy 
+    purchase_cabincouch:
+      name: Cabin couch
+      cost: 2480
+      owner: Timmy & Tommy 
+    purchase_cabindresser:
+      name: Cabin dresser
+      cost: 2160
+      owner: Timmy & Tommy 
+    purchase_cabinlowtable:
+      name: Cabin low table
+      cost: 2100
+      owner: Timmy & Tommy 
+    purchase_cabintable:
+      name: Cabin table
+      cost: 2100
+      owner: Timmy & Tommy 
+    purchase_cabinwallclock:
+      name: Cabin wall clock
+      cost: 1200
+      owner:Timmy & Tommy 
+    purchase_cabinwardrobe:
+      name: Cabin wardrobe
+      cost: 2480
+      owner: Timmy & Tommy
+    purchase_cabinwall:
+      name: Cabin wall
+      cost: 1200
+      owner: Timmy & Tommy 
+    purchase_cabinflooring:
+      name: Cabin flooring
+      cost: 1540
+      owner: Timmy & Tommy
+
+  Classic Series:
+  Exotic Series:
+  Green Series:
+  Harvest Series:
+  Jingle Series:
+  Kiddie Series:
+  Lovely Series:
+  Modern Series:
+  Ranch Series:
+  Regal Series:
+  Snowman Series:
+  Spooky Series:
+  Misc Furniture:
     toggle_iceclimber: Ice Climber
-    toggle_mariobros: Mario Bros
-    toggle_bluebed: Blue bed
-    toggle_bluebench: Blue bench
-    toggle_bluebookcase: Blue bookcase
-    toggle_bluebureau: Blue bureau
-    toggle_bluecabinet: Blue cabinet
-    toggle_bluechair: Blue chair
-    toggle_blueclock: Blue clock
-    toggle_bluedresser: Blue dresser
-    toggle_bluetable: Blue table
-    toggle_bluewardrobe: Blue wardrobe
-    toggle_cabanaarmchair: Cabana armchair
-    toggle_cabanabed: Cabana bed
-    toggle_cabanabookcase: Cabana bookcase
-    toggle_cabanachair: Cabana chair
-    toggle_cabanadresser: Cabana dresser
-    toggle_cabanalamp: Cabana lamp
-    toggle_cabanascreen: Cabana screen
-    toggle_cabanatable: Cabana table
-    toggle_cabanavanity: Cabana vanity
-    toggle_cabanawardrobe: Cabana wardrobe
-    toggle_cabinarmchair: Cabin armchair
-    toggle_cabinbed: Cabin bed
-    toggle_cabinbookcase: Cabin bookcase
-    toggle_cabinchair: Cabin chair
-    toggle_cabinclock: Cabin clock
-    toggle_cabincouch: Cabin couch
-    toggle_cabindresser: Cabin dresser
-    toggle_cabinlowtable: Cabin low table
-    toggle_cabintable: Cabin table
-    toggle_cabinwardrobe: Cabin wardrobe
+    toggle_mariobros: Mario Bro
     toggle_classicbed: Classic bed
     toggle_classiccabinet: Classic cabinet
     toggle_classicchair: Classic chair
